@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MeViewController : UIViewController
+@interface MeTableViewCell : UITableViewCell
 
 @end
 

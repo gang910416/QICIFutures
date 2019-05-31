@@ -12,6 +12,10 @@
 		0025DCEB21A314BE00227A0E /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025DCEA21A314BE00227A0E /* AddViewController.m */; };
 		0025DCEF21A3238700227A0E /* BaseHiddenBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025DCEE21A3238700227A0E /* BaseHiddenBarViewController.m */; };
 		0026C97D21AEE77D0025E89E /* NSMutableAttributedString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0026C97C21AEE77D0025E89E /* NSMutableAttributedString+Extension.m */; };
+		04EABA4F22A115B800573FB0 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA4D22A115B800573FB0 /* MeTableViewCell.m */; };
+		04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */; };
+		04EABA5422A115E700573FB0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA5222A115E700573FB0 /* MeViewController.m */; };
+		04EABA5522A115E700573FB0 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA5322A115E700573FB0 /* MeViewController.xib */; };
 		D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
 		D72224F021A253EB00278111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72224EE21A253EB00278111 /* Main.storyboard */; };
@@ -33,7 +37,6 @@
 		D722266321A2578F00278111 /* NSData+UMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D722265221A2578F00278111 /* NSData+UMExtensions.m */; };
 		D722266421A2578F00278111 /* NSString+UMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D722265421A2578F00278111 /* NSString+UMExtensions.m */; };
 		D722266E21A293D700278111 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722266D21A293D700278111 /* HomeViewController.m */; };
-		D722267221A293F800278111 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722267121A293F800278111 /* MeViewController.m */; };
 		D722267621A29A8600278111 /* UIMainConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = D722267421A29A8600278111 /* UIMainConstructor.m */; };
 		D7986B2421AF9DDC00AA0BA3 /* BaseRemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7986B2321AF9DDC00AA0BA3 /* BaseRemindView.m */; };
 		D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D798701B21B0EBB400AA0BA3 /* BaseLoading.m */; };
@@ -66,6 +69,12 @@
 		0025DCEE21A3238700227A0E /* BaseHiddenBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseHiddenBarViewController.m; sourceTree = "<group>"; };
 		0026C97B21AEE77D0025E89E /* NSMutableAttributedString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Extension.h"; sourceTree = "<group>"; };
 		0026C97C21AEE77D0025E89E /* NSMutableAttributedString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Extension.m"; sourceTree = "<group>"; };
+		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
+		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
+		04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
+		04EABA5122A115E700573FB0 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		04EABA5222A115E700573FB0 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		04EABA5322A115E700573FB0 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 		09C6A90CBFA7A6550E0A9CD8 /* Pods-ENGLISH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENGLISH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ENGLISH/Pods-ENGLISH.debug.xcconfig"; sourceTree = "<group>"; };
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		256C3D3D556D446AF8963A0D /* Pods-QCLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QCLC.release.xcconfig"; path = "Pods/Target Support Files/Pods-QCLC/Pods-QCLC.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,8 +130,6 @@
 		D722266921A28A5000278111 /* libPods-LiveOfBeiJing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-LiveOfBeiJing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D722266C21A293D700278111 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D722266D21A293D700278111 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D722267021A293F800278111 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		D722267121A293F800278111 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		D722267421A29A8600278111 /* UIMainConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMainConstructor.m; sourceTree = "<group>"; };
 		D722267521A29A8600278111 /* UIMainConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainConstructor.h; sourceTree = "<group>"; };
 		D7986B2221AF9DDC00AA0BA3 /* BaseRemindView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRemindView.h; sourceTree = "<group>"; };
@@ -332,8 +339,12 @@
 		D722266F21A293DF00278111 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				D722267021A293F800278111 /* MeViewController.h */,
-				D722267121A293F800278111 /* MeViewController.m */,
+				04EABA5122A115E700573FB0 /* MeViewController.h */,
+				04EABA5222A115E700573FB0 /* MeViewController.m */,
+				04EABA5322A115E700573FB0 /* MeViewController.xib */,
+				04EABA4C22A115B800573FB0 /* MeTableViewCell.h */,
+				04EABA4D22A115B800573FB0 /* MeTableViewCell.m */,
+				04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -441,7 +452,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */,
 				D72224F521A253EC00278111 /* LaunchScreen.storyboard in Resources */,
+				04EABA5522A115E700573FB0 /* MeViewController.xib in Resources */,
 				D72224F221A253EC00278111 /* Assets.xcassets in Resources */,
 				D72224F021A253EB00278111 /* Main.storyboard in Resources */,
 			);
@@ -520,11 +533,11 @@
 				D722266E21A293D700278111 /* HomeViewController.m in Sources */,
 				D722265B21A2578F00278111 /* UITableViewCell+UMReusable.m in Sources */,
 				D722265E21A2578F00278111 /* UMTimeStamp.m in Sources */,
+				04EABA4F22A115B800573FB0 /* MeTableViewCell.m in Sources */,
 				D722266321A2578F00278111 /* NSData+UMExtensions.m in Sources */,
 				0026C97D21AEE77D0025E89E /* NSMutableAttributedString+Extension.m in Sources */,
 				D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */,
 				001AF3F621A5AC7C0046E4DE /* BaseShowBarViewController.m in Sources */,
-				D722267221A293F800278111 /* MeViewController.m in Sources */,
 				0025DCEB21A314BE00227A0E /* AddViewController.m in Sources */,
 				D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */,
 				D72224F821A253EC00278111 /* main.m in Sources */,
@@ -539,6 +552,7 @@
 				D722265C21A2578F00278111 /* FileCacheManager.m in Sources */,
 				D722265521A2578F00278111 /* UIView+Frame.m in Sources */,
 				0025DCE721A313F700227A0E /* CircleViewController.m in Sources */,
+				04EABA5422A115E700573FB0 /* MeViewController.m in Sources */,
 				D72224EA21A253EB00278111 /* AppDelegate.m in Sources */,
 				D722265A21A2578F00278111 /* NSMutableArray+Extension.m in Sources */,
 				D7C218CA21A41A6A009458C2 /* HttpRequest.m in Sources */,
