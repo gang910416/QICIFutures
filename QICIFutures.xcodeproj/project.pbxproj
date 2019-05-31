@@ -12,6 +12,7 @@
 		0025DCEB21A314BE00227A0E /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025DCEA21A314BE00227A0E /* AddViewController.m */; };
 		0025DCEF21A3238700227A0E /* BaseHiddenBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025DCEE21A3238700227A0E /* BaseHiddenBarViewController.m */; };
 		0026C97D21AEE77D0025E89E /* NSMutableAttributedString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0026C97C21AEE77D0025E89E /* NSMutableAttributedString+Extension.m */; };
+		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
 		D72224F021A253EB00278111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72224EE21A253EB00278111 /* Main.storyboard */; };
@@ -35,11 +36,9 @@
 		D722266E21A293D700278111 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722266D21A293D700278111 /* HomeViewController.m */; };
 		D722267221A293F800278111 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D722267121A293F800278111 /* MeViewController.m */; };
 		D722267621A29A8600278111 /* UIMainConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = D722267421A29A8600278111 /* UIMainConstructor.m */; };
-		D7986B2421AF9DDC00AA0BA3 /* BaseRemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7986B2321AF9DDC00AA0BA3 /* BaseRemindView.m */; };
 		D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D798701B21B0EBB400AA0BA3 /* BaseLoading.m */; };
 		D7C218CA21A41A6A009458C2 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C218C821A41A6A009458C2 /* HttpRequest.m */; };
 		D7D8355A21B112ED000FE4DD /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D8355921B112ED000FE4DD /* FindViewController.m */; };
-		E4C4D678750F988E2075F88F /* libPods-QCLC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F38DD4694CE79059BFA447C /* libPods-QCLC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,15 +65,14 @@
 		0025DCEE21A3238700227A0E /* BaseHiddenBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseHiddenBarViewController.m; sourceTree = "<group>"; };
 		0026C97B21AEE77D0025E89E /* NSMutableAttributedString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Extension.h"; sourceTree = "<group>"; };
 		0026C97C21AEE77D0025E89E /* NSMutableAttributedString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Extension.m"; sourceTree = "<group>"; };
+		0479B29B22A118FB003BBE34 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C6A90CBFA7A6550E0A9CD8 /* Pods-ENGLISH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENGLISH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ENGLISH/Pods-ENGLISH.debug.xcconfig"; sourceTree = "<group>"; };
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		256C3D3D556D446AF8963A0D /* Pods-QCLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QCLC.release.xcconfig"; path = "Pods/Target Support Files/Pods-QCLC/Pods-QCLC.release.xcconfig"; sourceTree = "<group>"; };
+		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89109B94D3B8E64738812B44 /* libPods-ENGLISH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ENGLISH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F4D66DC517543280C2111F /* Pods-ENGLISH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENGLISH.release.xcconfig"; path = "Pods/Target Support Files/Pods-ENGLISH/Pods-ENGLISH.release.xcconfig"; sourceTree = "<group>"; };
-		A87B2951DE2BD0BC7EB94472 /* Pods-LiveOfBeiJing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOfBeiJing.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveOfBeiJing/Pods-LiveOfBeiJing.release.xcconfig"; sourceTree = "<group>"; };
+		B45A20D34BF346A3B4E5ED99 /* Pods-QICIFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QICIFutures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QICIFutures/Pods-QICIFutures.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE6B2A01BA9A0EB65A4681D /* libPods-LiveOfBeiJing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOfBeiJing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0BABD5B8140E84C2326F7C4 /* Pods-LiveOfBeiJing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOfBeiJing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveOfBeiJing/Pods-LiveOfBeiJing.debug.xcconfig"; sourceTree = "<group>"; };
-		D370694C41098CFC77EBD08C /* Pods-QCLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QCLC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QCLC/Pods-QCLC.debug.xcconfig"; sourceTree = "<group>"; };
 		D70847FB21ACF79200EDCEA9 /* MainLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoginViewController.h; sourceTree = "<group>"; };
 		D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainLoginViewController.m; sourceTree = "<group>"; };
 		D70987EC21EC7BE200409F5F /* ENGLISH.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ENGLISH.entitlements; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		D72224EF21A253EB00278111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D72224F121A253EC00278111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72224F421A253EC00278111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D72224F621A253EC00278111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D72224F721A253EC00278111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D72225D721A254E200278111 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D72225DC21A254E200278111 /* DefinePrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinePrefixHeader.pch; sourceTree = "<group>"; };
@@ -125,14 +122,13 @@
 		D722267121A293F800278111 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		D722267421A29A8600278111 /* UIMainConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMainConstructor.m; sourceTree = "<group>"; };
 		D722267521A29A8600278111 /* UIMainConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainConstructor.h; sourceTree = "<group>"; };
-		D7986B2221AF9DDC00AA0BA3 /* BaseRemindView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRemindView.h; sourceTree = "<group>"; };
-		D7986B2321AF9DDC00AA0BA3 /* BaseRemindView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRemindView.m; sourceTree = "<group>"; };
 		D798701B21B0EBB400AA0BA3 /* BaseLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLoading.m; sourceTree = "<group>"; };
 		D798701C21B0EBB400AA0BA3 /* BaseLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLoading.h; sourceTree = "<group>"; };
 		D7C218C821A41A6A009458C2 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		D7C218C921A41A6A009458C2 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		D7D8355821B112ED000FE4DD /* FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		D7D8355921B112ED000FE4DD /* FindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		EF110CFC520EF6CA71777E79 /* Pods-QICIFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QICIFutures.release.xcconfig"; path = "Pods/Target Support Files/Pods-QICIFutures/Pods-QICIFutures.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C4D678750F988E2075F88F /* libPods-QCLC.a in Frameworks */,
+				253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +190,7 @@
 				BFE6B2A01BA9A0EB65A4681D /* libPods-LiveOfBeiJing.a */,
 				89109B94D3B8E64738812B44 /* libPods-ENGLISH.a */,
 				0F38DD4694CE79059BFA447C /* libPods-QCLC.a */,
+				80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,12 +198,10 @@
 		BD590EEBD90B4B0F4E1515C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D0BABD5B8140E84C2326F7C4 /* Pods-LiveOfBeiJing.debug.xcconfig */,
-				A87B2951DE2BD0BC7EB94472 /* Pods-LiveOfBeiJing.release.xcconfig */,
 				09C6A90CBFA7A6550E0A9CD8 /* Pods-ENGLISH.debug.xcconfig */,
 				90F4D66DC517543280C2111F /* Pods-ENGLISH.release.xcconfig */,
-				D370694C41098CFC77EBD08C /* Pods-QCLC.debug.xcconfig */,
-				256C3D3D556D446AF8963A0D /* Pods-QCLC.release.xcconfig */,
+				B45A20D34BF346A3B4E5ED99 /* Pods-QICIFutures.debug.xcconfig */,
+				EF110CFC520EF6CA71777E79 /* Pods-QICIFutures.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -231,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				D70987EC21EC7BE200409F5F /* ENGLISH.entitlements */,
-				D72224E721A253EA00278111 /* LiveOfBeiJing */,
+				D72224E721A253EA00278111 /* QICIFutures */,
 				D72224E621A253EA00278111 /* Products */,
 				BD590EEBD90B4B0F4E1515C5 /* Pods */,
 				4D447A0D76C7B44295A1AA7D /* Frameworks */,
@@ -246,7 +241,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D72224E721A253EA00278111 /* LiveOfBeiJing */ = {
+		D72224E721A253EA00278111 /* QICIFutures */ = {
 			isa = PBXGroup;
 			children = (
 				D72224E821A253EB00278111 /* AppDelegate.h */,
@@ -262,11 +257,11 @@
 				D72224FE21A254BE00278111 /* Category */,
 				D72224EE21A253EB00278111 /* Main.storyboard */,
 				D72224F121A253EC00278111 /* Assets.xcassets */,
+				0479B29B22A118FB003BBE34 /* Info.plist */,
 				D72224F321A253EC00278111 /* LaunchScreen.storyboard */,
-				D72224F621A253EC00278111 /* Info.plist */,
 				D72224F721A253EC00278111 /* main.m */,
 			);
-			path = LiveOfBeiJing;
+			path = QICIFutures;
 			sourceTree = "<group>";
 		};
 		D72224FE21A254BE00278111 /* Category */ = {
@@ -309,7 +304,6 @@
 		D722252F21A254E200278111 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				D7986B2121AF9DB400AA0BA3 /* Remind */,
 				D798701A21B0EBB400AA0BA3 /* BaseLoading */,
 				D7C218C721A41A6A009458C2 /* HTTPRequest */,
 				D72225D721A254E200278111 /* PrefixHeader.pch */,
@@ -347,15 +341,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D7986B2121AF9DB400AA0BA3 /* Remind */ = {
-			isa = PBXGroup;
-			children = (
-				D7986B2221AF9DDC00AA0BA3 /* BaseRemindView.h */,
-				D7986B2321AF9DDC00AA0BA3 /* BaseRemindView.m */,
-			);
-			path = Remind;
-			sourceTree = "<group>";
-		};
 		D798701A21B0EBB400AA0BA3 /* BaseLoading */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,8 +370,8 @@
 				D72224E121A253EA00278111 /* Sources */,
 				D72224E221A253EA00278111 /* Frameworks */,
 				D72224E321A253EA00278111 /* Resources */,
-				70A98FB0A3B70A14CAF01CFD /* [CP] Copy Pods Resources */,
 				D70987EF21EC7D2000409F5F /* Embed Frameworks */,
+				0563F7AF157B63952C8B9CF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +435,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0563F7AF157B63952C8B9CF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QICIFutures/Pods-QICIFutures-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FCUUID/FCUUID.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/LEETheme/LEETheme.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PYSearch/PYSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/QWAlertView/QWAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCUUID.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LEETheme.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PYSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QWAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICKeyChainStore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QICIFutures/Pods-QICIFutures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5FD0100C22EC9D724DC61C52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,51 +504,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QCLC-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QICIFutures-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70A98FB0A3B70A14CAF01CFD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QCLC/Pods-QCLC-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrow.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrow@2x.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrow@3x.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrowTop.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrowTop@2x.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icArrowTop@3x.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/Resources/icCross@2x.png",
-				"${PODS_ROOT}/SFDraggableDialogView/SFDraggableDialogView/SFDraggableDialogView.xib",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrow.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrow@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrow@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrowTop.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrowTop@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icArrowTop@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icCross@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SFDraggableDialogView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCLC/Pods-QCLC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -531,7 +534,6 @@
 				0025DCEF21A3238700227A0E /* BaseHiddenBarViewController.m in Sources */,
 				D722265621A2578F00278111 /* UILabel+label.m in Sources */,
 				D722266421A2578F00278111 /* NSString+UMExtensions.m in Sources */,
-				D7986B2421AF9DDC00AA0BA3 /* BaseRemindView.m in Sources */,
 				D722265721A2578F00278111 /* NSDate+UMExtensions.m in Sources */,
 				D722265D21A2578F00278111 /* UIBarButtonItem+ImageTitleItem.m in Sources */,
 				D722267621A29A8600278111 /* UIMainConstructor.m in Sources */,
@@ -683,7 +685,7 @@
 		};
 		D72224FC21A253EC00278111 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D370694C41098CFC77EBD08C /* Pods-QCLC.debug.xcconfig */;
+			baseConfigurationReference = B45A20D34BF346A3B4E5ED99 /* Pods-QICIFutures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -695,8 +697,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveOfBeiJing/Other",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveOfBeiJing/Util/PrefixHeader.pch";
-				INFOPLIST_FILE = LiveOfBeiJing/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QICIFutures/Util/PrefixHeader.pch";
+				INFOPLIST_FILE = QICIFutures/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,7 +713,7 @@
 		};
 		D72224FD21A253EC00278111 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 256C3D3D556D446AF8963A0D /* Pods-QCLC.release.xcconfig */;
+			baseConfigurationReference = EF110CFC520EF6CA71777E79 /* Pods-QICIFutures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,8 +725,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveOfBeiJing/Other",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveOfBeiJing/Util/PrefixHeader.pch";
-				INFOPLIST_FILE = LiveOfBeiJing/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QICIFutures/Util/PrefixHeader.pch";
+				INFOPLIST_FILE = QICIFutures/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
