@@ -78,7 +78,7 @@
 		D70847FB21ACF79200EDCEA9 /* MainLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoginViewController.h; sourceTree = "<group>"; };
 		D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainLoginViewController.m; sourceTree = "<group>"; };
 		D70987EC21EC7BE200409F5F /* ENGLISH.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ENGLISH.entitlements; sourceTree = "<group>"; };
-		D72224E521A253EA00278111 /* QCLC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCLC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72224E521A253EA00278111 /* QICIFutures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QICIFutures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72224E821A253EB00278111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D72224E921A253EB00278111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D72224EF21A253EB00278111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 		D72224E621A253EA00278111 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D72224E521A253EA00278111 /* QCLC.app */,
+				D72224E521A253EA00278111 /* QICIFutures.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,9 +377,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D72224E421A253EA00278111 /* QCLC */ = {
+		D72224E421A253EA00278111 /* QICIFutures */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D72224FB21A253EC00278111 /* Build configuration list for PBXNativeTarget "QCLC" */;
+			buildConfigurationList = D72224FB21A253EC00278111 /* Build configuration list for PBXNativeTarget "QICIFutures" */;
 			buildPhases = (
 				5FD0100C22EC9D724DC61C52 /* [CP] Check Pods Manifest.lock */,
 				D72224E121A253EA00278111 /* Sources */,
@@ -392,9 +392,9 @@
 			);
 			dependencies = (
 			);
-			name = QCLC;
+			name = QICIFutures;
 			productName = LiveOfBeiJing;
-			productReference = D72224E521A253EA00278111 /* QCLC.app */;
+			productReference = D72224E521A253EA00278111 /* QICIFutures.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -418,7 +418,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D72224E021A253EA00278111 /* Build configuration list for PBXProject "QCLC" */;
+			buildConfigurationList = D72224E021A253EA00278111 /* Build configuration list for PBXProject "QICIFutures" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -431,7 +431,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D72224E421A253EA00278111 /* QCLC */,
+				D72224E421A253EA00278111 /* QICIFutures */,
 			);
 		};
 /* End PBXProject section */
@@ -740,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D72224E021A253EA00278111 /* Build configuration list for PBXProject "QCLC" */ = {
+		D72224E021A253EA00278111 /* Build configuration list for PBXProject "QICIFutures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D72224F921A253EC00278111 /* Debug */,
@@ -749,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D72224FB21A253EC00278111 /* Build configuration list for PBXNativeTarget "QCLC" */ = {
+		D72224FB21A253EC00278111 /* Build configuration list for PBXNativeTarget "QICIFutures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D72224FC21A253EC00278111 /* Debug */,
