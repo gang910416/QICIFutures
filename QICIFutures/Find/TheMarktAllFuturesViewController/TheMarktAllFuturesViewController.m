@@ -69,9 +69,11 @@
     if ([type isEqualToString:@"7"]) {
         
         vc.infoKey = dic[@"symbol"];
+        vc.title = dic[@"name"];
     }else{
         
         vc.infoKey = dic.allKeys.firstObject;
+        vc.title = dic.allValues.firstObject;
     }
     
     [self.navigationController pushViewController:vc animated:YES];

@@ -51,4 +51,6 @@
 block();\
 }];\
 
+#define TheMarktFuturesColor RGBColor(31, 34, 44)
+
 #endif /* TheMarktHeader_h */

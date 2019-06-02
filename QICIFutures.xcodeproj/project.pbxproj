@@ -36,6 +36,9 @@
 		04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411D22A2DAD9001C0DE5 /* Reachability.m */; };
 		04A5412422A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */; };
 		04A5412522A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412222A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m */; };
+		04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */; };
+		04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */; };
+		04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */; };
 		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
@@ -139,6 +142,12 @@
 		04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchIResultDataTableViewCell.m; sourceTree = "<group>"; };
 		04A5412222A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultchartsTableViewCell.m; sourceTree = "<group>"; };
 		04A5412322A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchIResultDataTableViewCell.h; sourceTree = "<group>"; };
+		04A5412722A3FB15001C0DE5 /* TheMarktRequestNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktRequestNewsModel.h; sourceTree = "<group>"; };
+		04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktRequestNewsModel.m; sourceTree = "<group>"; };
+		04A5412A22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktFuturesNewsTableViewCell.h; sourceTree = "<group>"; };
+		04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktFuturesNewsTableViewCell.m; sourceTree = "<group>"; };
+		04A5412E22A3FF03001C0DE5 /* TheMarktNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktNewsModel.h; sourceTree = "<group>"; };
+		04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktNewsModel.m; sourceTree = "<group>"; };
 		09C6A90CBFA7A6550E0A9CD8 /* Pods-ENGLISH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENGLISH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ENGLISH/Pods-ENGLISH.debug.xcconfig"; sourceTree = "<group>"; };
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -354,6 +363,8 @@
 		04A5411922A2D247001C0DE5 /* TheMarktFuturesInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				04A5412D22A3FEEB001C0DE5 /* model */,
+				04A5412622A3FAF5001C0DE5 /* viewModel */,
 				04A5412322A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.h */,
 				04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */,
 				04A5412022A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.h */,
@@ -362,8 +373,28 @@
 				04A5411B22A2D963001C0DE5 /* FuturesKModel.m */,
 				04A5411622A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.h */,
 				04A5411722A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m */,
+				04A5412A22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.h */,
+				04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */,
 			);
 			path = TheMarktFuturesInfoViewController;
+			sourceTree = "<group>";
+		};
+		04A5412622A3FAF5001C0DE5 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A5412722A3FB15001C0DE5 /* TheMarktRequestNewsModel.h */,
+				04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		04A5412D22A3FEEB001C0DE5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04A5412E22A3FF03001C0DE5 /* TheMarktNewsModel.h */,
+				04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		4D447A0D76C7B44295A1AA7D /* Frameworks */ = {
@@ -711,6 +742,7 @@
 				04A5410222A2C976001C0DE5 /* TheMarktLookFuturesCell.m in Sources */,
 				04A540FF22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m in Sources */,
 				D722265921A2578F00278111 /* NoHighlightButton.m in Sources */,
+				04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */,
 				04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */,
 				04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */,
 				04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */,
@@ -758,6 +790,8 @@
 				04A5411522A2D099001C0DE5 /* AllFuturesListHeader.m in Sources */,
 				04A540F922A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m in Sources */,
 				D7D8355A21B112ED000FE4DD /* FindViewController.m in Sources */,
+				04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */,
+				04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */,
 				D722266021A2578F00278111 /* UITextView+Placeholder.m in Sources */,
 				04A5411822A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m in Sources */,
 			);

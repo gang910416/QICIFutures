@@ -9,6 +9,10 @@
 #import "FuturesKModel.h"
 #import "SearchIResultDataTableViewCell.h"
 #import "SearchResultchartsTableViewCell.h"
+#import "TheMarktFuturesNewsTableViewCell.h"
+#import "TheMarktNewsModel.h"
+#import "TheMarktRequestNewsModel.h"
+#import "LearnWebViewController.h"
 
 @interface TheMarktFuturesInfoViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -25,7 +29,11 @@
 
 @property (nonatomic,strong) NSMutableArray *otherInfos;
 
+@property (nonatomic,strong) NSMutableArray *newsArray;
+
 @property (nonatomic,assign) NSInteger index;
+
+@property (nonatomic,strong) TheMarktRequestNewsModel *newsViewModel;
 
 @end
 
@@ -43,6 +51,21 @@
 }
 
 #pragma - mark 懒加载
+
+-(TheMarktRequestNewsModel *)newsViewModel{
+    if (!_newsViewModel) {
+        _newsViewModel = [[TheMarktRequestNewsModel alloc] init];
+    }
+    return _newsViewModel;
+}
+
+-(NSMutableArray *)newsArray{
+    
+    if (!_newsArray) {
+        _newsArray = [NSMutableArray array];
+    }
+    return _newsArray;
+}
 
 -(NSMutableArray *)dataArray{
     
@@ -64,11 +87,15 @@
     
     if (!_listView) {
         _listView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-kDeviceNavHeight-IS_IPHONE_X*24) style:UITableViewStyleGrouped];
+        _listView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _listView.delegate = self;
         _listView.dataSource = self;
-        _listView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _listView.backgroundColor = [UIColor whiteColor];
+//        _listView.rowHeight = UITableViewAutomaticDimension;
+//        _listView.estimatedRowHeight = 200;
         [_listView registerClass:NSClassFromString(@"SearchIResultDataTableViewCell") forCellReuseIdentifier:@"SearchIResultDataTableViewCell"];
         [_listView registerClass:NSClassFromString(@"SearchResultchartsTableViewCell") forCellReuseIdentifier:@"SearchResultchartsTableViewCell"];
+        [_listView registerClass:NSClassFromString(@"TheMarktFuturesNewsTableViewCell") forCellReuseIdentifier:@"TheMarktFuturesNewsTableViewCell"];
         
     }
     return _listView;
@@ -77,6 +104,8 @@
 #pragma - mark UI
 
 -(void)configUI{
+    
+    self.view.backgroundColor = TheMarktFuturesColor;
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -105,6 +134,7 @@
         if (arr.count > 0) {
             NSArray *tempArr = arr.firstObject;
             if (tempArr.count > 0) {
+                
                 [self.otherInfos removeAllObjects];
                 [self.otherInfos addObjectsFromArray:tempArr];
                 [self.listView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:NO];
@@ -127,6 +157,18 @@
         [self requestKlineData:@"2" isGuonei:NO];
     }
     
+    weakSelf(weakSelf);
+    [self.newsViewModel requestFuturesNewsInfoSuccess:^(NSArray * _Nonnull dataArray) {
+        [weakSelf.newsArray addObjectsFromArray:dataArray];
+//        [weakSelf.listView reloadSections:[NSIndexSet indexSetWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];
+        [weakSelf.listView reloadData];
+    } failture:^(NSString * _Nonnull error) {
+        [SVProgressHUD showErrorWithStatus:error];
+        [SVProgressHUD dismissWithDelay:1];
+    } timeout:^{
+        [SVProgressHUD showErrorWithStatus:@"超时"];
+        [SVProgressHUD dismissWithDelay:1];
+    }];
 }
 
 -(void)requestKlineData:(NSString *)type isGuonei:(BOOL)isGuonei{
@@ -280,7 +322,7 @@
 #pragma - mark tableviewdelegate
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
     switch (indexPath.section) {
         case 0:
         {
@@ -292,7 +334,12 @@
             return 340;
         }
             break;
-            
+        case 2:
+        {
+            return 110;
+        }
+            break;
+
         default:
             return 0.01;
             break;
@@ -316,16 +363,16 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 2;
+    return 3;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//
-//    if (section == 2) {
-//        return 5;
-//    }else{
-//        return 1;
-//    }
-    return 1;
+
+    if (section == 2) {
+        return self.newsArray.count;
+    }else{
+        return 1;
+    }
+//    return 1;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -365,23 +412,19 @@
             return cell;
         }
             break;
-//        case 2:
-//        {
-//            HomeNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeNewsTableViewCell"];
-//            if (!cell) {
-//                cell = [[HomeNewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"HomeNewsTableViewCell"];
-//            }
-//
-//            if (self.homeViewModel.newsArray.count>0) {
-//                HomeNewsModel *model = self.homeViewModel.newsArray[indexPath.row];
-//
-//                [cell buildWithModel:model];
-//            }
-//
-//
-//            return cell;
-//        }
-//            break;
+        case 2:
+        {
+            TheMarktFuturesNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TheMarktFuturesNewsTableViewCell"];
+            if (!cell) {
+                cell = [[TheMarktFuturesNewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TheMarktFuturesNewsTableViewCell"];
+            }
+            TheMarktNewsModel *model = self.newsArray[indexPath.row];
+            
+            [cell buildWihtModel:model];
+
+            return cell;
+        }
+            break;
             
             
         default:
@@ -394,12 +437,13 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    if (indexPath.section == 2) {
-//        HomeNewsModel *model = self.homeViewModel.newsArray[indexPath.row];
-//        HomeNewsViewController *vc = [[HomeNewsViewController alloc] init];
-//        vc.urlStr = model.url;
-//        [self.navigationController pushViewController:vc animated:YES];
-//    }
+    if (indexPath.section == 2) {
+        TheMarktNewsModel *model = self.newsArray[indexPath.row];
+        LearnWebViewController *vc = [[LearnWebViewController alloc] init];
+        vc.urlStr = model.url;
+        vc.title = model.title;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 -(void)reRequestKlingInfo:(NSInteger )type{
