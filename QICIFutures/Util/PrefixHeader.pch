@@ -21,5 +21,8 @@
 #import "BaseLoading.h"
 #import <SDCycleScrollView.h>
 #import <YYText.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "TheMarktHeader.h"
 
 #endif /* PrefixHeader_pch */

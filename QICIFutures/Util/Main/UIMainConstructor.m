@@ -88,9 +88,9 @@ static UIMainConstructor *constructor;
     
     //发现
     FindViewController *findVc = [[FindViewController alloc] init];
-    findVc.title = @"发现";
+    findVc.title = @"行情";
     findVc.hidesBottomBarWhenPushed =NO;
-    UINavigationController *findNC = [[UINavigationController alloc] initWithRootViewController:findVc];
+    TheMarktBseNavigationViewController *findNC = [[TheMarktBseNavigationViewController alloc] initWithRootViewController:findVc];
     
 
     

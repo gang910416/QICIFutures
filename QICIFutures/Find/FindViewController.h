@@ -5,11 +5,13 @@
 //  Created by Bingo on 2018/11/30.
 //
 
-#import "BaseHiddenBarViewController.h"
+#import "TheMarktBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FindViewController : BaseHiddenBarViewController
+@interface FindViewController : TheMarktBaseViewController
+
+
 
 @end
 
