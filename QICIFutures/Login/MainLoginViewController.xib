@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUm-Tm-1Uy">
-                    <rect key="frame" x="374" y="84" width="20" height="20"/>
+                    <rect key="frame" x="374" y="60" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="6FL-x7-tkr"/>
                         <constraint firstAttribute="width" constant="20" id="cKU-Vs-mhB"/>
@@ -49,19 +45,19 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIL-tQ-fJW">
-                    <rect key="frame" x="30" y="164" width="51" height="30"/>
+                    <rect key="frame" x="30" y="140" width="51" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到迎客手机维修宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-N6-FKq">
-                    <rect key="frame" x="30" y="199" width="214.5" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到贵金属期货宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-N6-FKq">
+                    <rect key="frame" x="30" y="175" width="199" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a89-Q0-h0w">
-                    <rect key="frame" x="246.5" y="193" width="31" height="30"/>
+                    <rect key="frame" x="231" y="169" width="31" height="30"/>
                     <state key="normal" title="注册">
                         <color key="titleColor" red="0.85228270289999997" green="0.22364121679999999" blue="0.24559685589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -70,7 +66,7 @@
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-Xr-Ah3">
-                    <rect key="frame" x="30" y="237" width="354" height="40"/>
+                    <rect key="frame" x="30" y="213" width="354" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="9Ct-Z6-vs2"/>
                     </constraints>
@@ -79,14 +75,14 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdZ-L3-VOX">
-                    <rect key="frame" x="30" y="277" width="354" height="1"/>
+                    <rect key="frame" x="30" y="253" width="354" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.80000000000000004" id="Ggx-8U-0Tb"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7M-xS-dgv">
-                    <rect key="frame" x="30" y="288" width="354" height="40"/>
+                    <rect key="frame" x="30" y="264" width="354" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="8oY-CB-3RK"/>
                     </constraints>
@@ -95,14 +91,14 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-2w-CQs">
-                    <rect key="frame" x="30" y="328" width="354" height="0.5"/>
+                    <rect key="frame" x="30" y="304" width="354" height="0.5"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.80000000000000004" id="HyB-LQ-nLO"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6p-OC-lHS">
-                    <rect key="frame" x="30" y="378.5" width="354" height="40"/>
+                    <rect key="frame" x="30" y="354.5" width="354" height="40"/>
                     <color key="backgroundColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="DgW-5w-U4X"/>
@@ -157,7 +153,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqO-sc-oqy">
-                    <rect key="frame" x="374" y="84" width="20" height="20"/>
+                    <rect key="frame" x="374" y="60" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="Iox-Zr-4gb"/>
                         <constraint firstAttribute="height" constant="20" id="eTQ-8d-OoZ"/>
@@ -168,19 +164,19 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEO-dY-z3n">
-                    <rect key="frame" x="30" y="164" width="51" height="30"/>
+                    <rect key="frame" x="30" y="140" width="51" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到迎客手机维修宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-DG-epk">
-                    <rect key="frame" x="30" y="199" width="214.5" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到贵金属期货宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-DG-epk">
+                    <rect key="frame" x="30" y="175" width="199" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhi-kj-Rur">
-                    <rect key="frame" x="246.5" y="193" width="31" height="30"/>
+                    <rect key="frame" x="231" y="169" width="31" height="30"/>
                     <state key="normal" title="登录">
                         <color key="titleColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -189,7 +185,7 @@
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-jF-Ydw">
-                    <rect key="frame" x="30" y="237" width="354" height="40"/>
+                    <rect key="frame" x="30" y="213" width="354" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="WyU-fr-qdq"/>
                     </constraints>
@@ -198,14 +194,14 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-om-Lty">
-                    <rect key="frame" x="30" y="277" width="354" height="1"/>
+                    <rect key="frame" x="30" y="253" width="354" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.80000000000000004" id="s6v-li-yfw"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OXM-rY-9K9">
-                    <rect key="frame" x="30" y="288" width="354" height="40"/>
+                    <rect key="frame" x="30" y="264" width="354" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="cWo-mA-lAz"/>
                     </constraints>
@@ -214,14 +210,14 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKf-3M-hYq">
-                    <rect key="frame" x="30" y="328" width="354" height="0.5"/>
+                    <rect key="frame" x="30" y="304" width="354" height="0.5"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.80000000000000004" id="otW-AD-4rf"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldg-4H-dmx">
-                    <rect key="frame" x="30" y="429.5" width="354" height="40"/>
+                    <rect key="frame" x="30" y="405.5" width="354" height="40"/>
                     <color key="backgroundColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="qKF-oh-ASy"/>
@@ -240,7 +236,7 @@
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请在次确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PA-K8-cP5">
-                    <rect key="frame" x="30" y="338.5" width="354" height="40"/>
+                    <rect key="frame" x="30" y="314.5" width="354" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="wS3-Ek-lkp"/>
                     </constraints>
@@ -249,7 +245,7 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxV-t1-qZt">
-                    <rect key="frame" x="30" y="378.5" width="354" height="1"/>
+                    <rect key="frame" x="30" y="354.5" width="354" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="0.80000000000000004" id="3vG-6R-RIA"/>
