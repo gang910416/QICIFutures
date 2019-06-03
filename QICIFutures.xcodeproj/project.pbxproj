@@ -128,6 +128,10 @@
 		04B5397622A4C70A00578EE4 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B5397422A4C70A00578EE4 /* CollectionTableViewCell.xib */; };
 		04B5397E22A4D17B00578EE4 /* NoDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5397C22A4D17B00578EE4 /* NoDataTableViewCell.m */; };
 		04B5397F22A4D17B00578EE4 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B5397D22A4D17B00578EE4 /* NoDataTableViewCell.xib */; };
+		04B5398122A4F5C300578EE4 /* QICIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */; };
+		04B5398222A4F5FD00578EE4 /* QICIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */; };
+		04B5398322A4F60D00578EE4 /* QICIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */; };
+		04B5398922A5068400578EE4 /* SelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5398822A5068400578EE4 /* SelectPhotoManager.m */; };
 		04EABA4F22A115B800573FB0 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA4D22A115B800573FB0 /* MeTableViewCell.m */; };
 		04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */; };
 		04EABA5422A115E700573FB0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA5222A115E700573FB0 /* MeViewController.m */; };
@@ -415,7 +419,15 @@
 		04B5397B22A4D17B00578EE4 /* NoDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoDataTableViewCell.h; sourceTree = "<group>"; };
 		04B5397C22A4D17B00578EE4 /* NoDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataTableViewCell.m; sourceTree = "<group>"; };
 		04B5397D22A4D17B00578EE4 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		04B5398722A5068400578EE4 /* SelectPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoManager.h; sourceTree = "<group>"; };
+		04B5398822A5068400578EE4 /* SelectPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoManager.m; sourceTree = "<group>"; };
 		04CA6BD822A4CD5500412FFD /* SaveAndUseFuturesDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndUseFuturesDataModel.h; sourceTree = "<group>"; };
+		04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIHTTPRequest.h; sourceTree = "<group>"; };
+		04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIHTTPRequest.m; sourceTree = "<group>"; };
+		04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIRequestSerializer.h; sourceTree = "<group>"; };
+		04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIRequestSerializer.m; sourceTree = "<group>"; };
+		04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIResponseSerializer.h; sourceTree = "<group>"; };
+		04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIResponseSerializer.m; sourceTree = "<group>"; };
 		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
@@ -1118,6 +1130,23 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		04B5398522A5064C00578EE4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04B5398622A5068400578EE4 /* SelectPhotoManager */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04B5398622A5068400578EE4 /* SelectPhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				04B5398722A5068400578EE4 /* SelectPhotoManager.h */,
+				04B5398822A5068400578EE4 /* SelectPhotoManager.m */,
+			);
+			path = SelectPhotoManager;
+			sourceTree = "<group>";
+		};
 		4D447A0D76C7B44295A1AA7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1276,6 +1305,7 @@
 		D722266F21A293DF00278111 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				04B5398522A5064C00578EE4 /* Tools */,
 				0440179E22A35818003F2E3C /* index.html */,
 				0440179F22A35818003F2E3C /* server.html */,
 				0440178C22A14144003F2E3C /* Model */,
@@ -1308,6 +1338,12 @@
 		D7C218C721A41A6A009458C2 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */,
+				04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */,
+				04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */,
+				04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */,
+				04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */,
+				04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */,
 				D7C218C821A41A6A009458C2 /* HttpRequest.m */,
 				D7C218C921A41A6A009458C2 /* HttpRequest.h */,
 			);
@@ -1488,6 +1524,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B5398322A4F60D00578EE4 /* QICIRequestSerializer.m in Sources */,
+				04B5398222A4F5FD00578EE4 /* QICIResponseSerializer.m in Sources */,
+				04B5398122A4F5C300578EE4 /* QICIHTTPRequest.m in Sources */,
 				04A5410222A2C976001C0DE5 /* TheMarktLookFuturesCell.m in Sources */,
 				04A540FF22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m in Sources */,
 				D722265921A2578F00278111 /* NoHighlightButton.m in Sources */,
@@ -1593,6 +1632,7 @@
 				0440179722A2EF77003F2E3C /* ShareAppModel.m in Sources */,
 				D722265C21A2578F00278111 /* FileCacheManager.m in Sources */,
 				04A540F122A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m in Sources */,
+				04B5398922A5068400578EE4 /* SelectPhotoManager.m in Sources */,
 				D722265521A2578F00278111 /* UIView+Frame.m in Sources */,
 				044017B322A3E946003F2E3C /* FastListViewController.m in Sources */,
 				0025DCE721A313F700227A0E /* CircleViewController.m in Sources */,

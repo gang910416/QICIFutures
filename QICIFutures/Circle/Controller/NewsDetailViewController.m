@@ -27,6 +27,9 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    if (![[UserModel getInstance]getUserIsLogin]) {
+        [self.rightBtn setBackgroundImage:[UIImage imageNamed:@"shoucang_nor"] forState:UIControlStateNormal];
+    }
     if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] containsObject:self.dataArr]) {
         [self.rightBtn setBackgroundImage:[UIImage imageNamed:@"shoucang_sel"] forState:UIControlStateNormal];
     }else{
@@ -99,28 +102,33 @@
 
 - (void)clickRightBtn:(UIButton *)sender{
     
-    if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] containsObject:self.dataArr]) {
-        NSMutableArray *likeArray = [[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] mutableCopy];
-        [likeArray removeObject:self.dataArr];
-        [[NSUserDefaults standardUserDefaults]setObject:likeArray forKey:@"newsid"];
-        [sender setBackgroundImage:[UIImage imageNamed:@"shoucang_nor"] forState:UIControlStateNormal];
-        [SVProgressHUD showSuccessWithStatus:@"取消收藏成功"];
-        [SVProgressHUD dismissWithDelay:1.f];
-    }
-    else{
-        NSMutableArray *likeArray = [[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] mutableCopy];
-        if (!likeArray) {
-            likeArray = [[NSMutableArray alloc]initWithCapacity:0];
+    if ([[UserModel getInstance]getUserIsLogin]) {
+        if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] containsObject:self.dataArr]) {
+            NSMutableArray *likeArray = [[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] mutableCopy];
+            [likeArray removeObject:self.dataArr];
+            [[NSUserDefaults standardUserDefaults]setObject:likeArray forKey:@"newsid"];
+            [sender setBackgroundImage:[UIImage imageNamed:@"shoucang_nor"] forState:UIControlStateNormal];
+            [SVProgressHUD showSuccessWithStatus:@"取消收藏成功"];
+            [SVProgressHUD dismissWithDelay:1.f];
         }
-        [likeArray addObject:self.dataArr];
-        
-        NSArray *saveArray = [NSArray arrayWithArray:likeArray];
-        [[NSUserDefaults standardUserDefaults]setObject:saveArray forKey:@"newsid"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        [sender setBackgroundImage:[UIImage imageNamed:@"shoucang_sel"] forState:UIControlStateNormal];
-        [SVProgressHUD showSuccessWithStatus:@"收藏成功"];
-        [SVProgressHUD dismissWithDelay:1.f];
+        else{
+            NSMutableArray *likeArray = [[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] mutableCopy];
+            if (!likeArray) {
+                likeArray = [[NSMutableArray alloc]initWithCapacity:0];
+            }
+            [likeArray addObject:self.dataArr];
+            
+            NSArray *saveArray = [NSArray arrayWithArray:likeArray];
+            [[NSUserDefaults standardUserDefaults]setObject:saveArray forKey:@"newsid"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            [sender setBackgroundImage:[UIImage imageNamed:@"shoucang_sel"] forState:UIControlStateNormal];
+            [SVProgressHUD showSuccessWithStatus:@"收藏成功"];
+            [SVProgressHUD dismissWithDelay:1.f];
+        }
+    }else{
+        MainLoginViewController *login = [[MainLoginViewController alloc] init];
+        [self presentViewController:login animated:YES completion:nil];
     }
 }
 

@@ -46,7 +46,10 @@
                            {
                                [SVProgressHUD dismiss];
                                [[UserModel getInstance]userLogIn];
-                               [self dismissViewControllerAnimated:YES completion:nil];                           });
+                               [self dismissViewControllerAnimated:YES completion:nil];
+                               [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+                               [SVProgressHUD dismissWithDelay:2.f];
+                           });
         }else{
             [SVProgressHUD showErrorWithStatus:@"密码错误"];
             [SVProgressHUD dismissWithDelay:1.0];
@@ -88,6 +91,8 @@
                                    [SVProgressHUD dismiss];
                                    [[UserModel getInstance] userLogIn];
                                    [self dismissViewControllerAnimated:YES completion:nil];
+                                   [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+                                   [SVProgressHUD dismissWithDelay:2.f];
                                });
                
             }else{

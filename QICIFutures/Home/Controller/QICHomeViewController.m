@@ -194,8 +194,8 @@ static NSString *const homeCellId = @"homeCellId";
             [weakSelf skipToNewsWithModel:newsModel];
         };
         _headerView.mapViewSelectedBlock = ^(NSInteger index) {
-
-            [weakSelf p_skipToDetailControllerWithIndex:index];
+             [weakSelf p_skipToDetailControllerWithIndex:index];
+         
         };
         
         _headerView.indexSelectedBlock = ^(QICIMarkeModel * _Nullable selectedListModel, BOOL isShowList) {
@@ -243,13 +243,19 @@ static NSString *const homeCellId = @"homeCellId";
     switch (index) {
         case 0:
         {
-          
+            TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
+            tmafVC.type = TheMarktAllFuturesViewTypeDomestic;
+            tmafVC.title = @"国内期货";
+               [self.navigationController pushViewController:tmafVC animated:YES];
         }
             break;
             
         case 1:
         {
-          
+            TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
+            tmafVC.type = TheMarktAllFuturesViewTypeForegin;
+            tmafVC.title = @"国际期货";
+            [self.navigationController pushViewController:tmafVC animated:YES];
         }
             break;
         case 2:

@@ -3,11 +3,14 @@
 #import "MeTableViewCell.h"
 #import <StoreKit/StoreKit.h>
 #import "CollectionViewController.h"
+#import "SelectPhotoManager.h"
 #define ScaleHeight SCREEN_HEIGHT / 667
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *meTableView;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
 @property (nonatomic,strong) NSArray *titleArr;
+@property (nonatomic,strong) UIImage *img;
+@property (nonatomic, strong)SelectPhotoManager *photoManager;
 @end
 
 @implementation MeViewController
@@ -15,6 +18,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self configTableView];
+    self.img = [UIImage imageNamed:@"head"];
 }
 
 - (void)viewDidLoad {
@@ -31,6 +35,8 @@
     self.meTableView.showsVerticalScrollIndicator = NO;
     [self.meTableView registerNib:[UINib nibWithNibName:@"MeTableViewCell" bundle:nil] forCellReuseIdentifier:@"MeTableViewCell"];
     [self.meTableView registerClass:[MineHeaderViewCell class] forCellReuseIdentifier:@"MineHeaderViewCell"];
+    self.meTableView.alwaysBounceVertical = NO;
+    self.meTableView.bounces = NO;
     [self.view addSubview:self.meTableView];
 }
 
@@ -39,18 +45,23 @@
                           @"title":@[@""]
                           },@{
                               @"title":@[@"给个好评",@"分享App",@"我的收藏"],
-                              @"image":@[@"Account_icon",@"opinion_icon",@"opinion_icon"]
+                              @"image":@[@"1",@"2",@"3"]
                               },@{
                               @"title":@[@"意见反馈",@"清理缓存",@"关于我们",@"隐私协议",@"联系我们"],
-                              @"image":@[@"Account_icon",@"opinion_icon",@"Account_icon",@"opinion_icon",@"Account_icon"]
+                              @"image":@[@"4",@"5",@"6",@"7",@"8"]
                               },@{
                               @"title":@[@"退出登录"],
-                              @"image":@[@"sit_icon"]
+                              @"image":@[@"9"]
                               }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.titleArr.count-1;
+    if ([[UserModel getInstance]getUserIsLogin]) {
+        return self.titleArr.count;
+    }else{
+        return self.titleArr.count-1;
+    }
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -64,13 +75,18 @@
         if (!cell) {
             cell = [[MineHeaderViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MineHeaderViewCell"];
         }
+        [cell.header addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(jumpLogin)]];
         if ([[UserModel getInstance]getUserIsLogin]) {
             cell.name.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"loginnumber"];
+            UIImage *img = [UIImage imageWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"headerImage"]];
+            cell.header.image = img;
+            
         }else{
             cell.name.text = @"请注册/登陆";
+            cell.header.image = [UIImage imageNamed:@"head"];
         }
-
-        [cell.header addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(jumpLogin)]];
+        
+        
         return cell;
     }else{
         MeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MeTableViewCell"];
@@ -99,7 +115,7 @@
     if(indexPath.section == 1){
         if (indexPath.row == 0) {
             [self gotoCommit];
-        }else if (indexPath.row == 0) {
+        }else if (indexPath.row == 1) {
             [self shareApp];
         }else{
             [self myCollection];
@@ -122,7 +138,7 @@
         }else if(indexPath.row == 1){
             [self cleanSuccess];
         }else if (indexPath.row == 2){
-            [self aboutUs];
+            [self pushToAboutUs];
         }else if(indexPath.row == 3){
             [self service];
         }
@@ -158,6 +174,22 @@
     if (![[UserModel getInstance] getUserIsLogin]) {
         MainLoginViewController *login = [[MainLoginViewController alloc] init];
         [self presentViewController:login animated:YES completion:nil];
+    }else{
+        if (!_photoManager) {
+            _photoManager =[[SelectPhotoManager alloc]init];
+        }
+        [_photoManager startSelectPhotoWithImageName:@"选择头像"];
+        __weak typeof(self)mySelf=self;
+        //选取照片成功
+        _photoManager.successHandle=^(SelectPhotoManager *manager,UIImage *image){
+            
+            mySelf.img = image;
+            //保存到本地
+            NSData *data = UIImagePNGRepresentation(image);
+            [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"headerImage"];
+            [super viewWillAppear:YES];
+            [mySelf.meTableView reloadData];
+        };
     }
 }
 
@@ -211,9 +243,15 @@
 
 // 我的收藏
 -(void)myCollection{
-    CollectionViewController *collection = [[CollectionViewController alloc]init];
-    collection.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:collection animated:YES];
+    if ([[UserModel getInstance]getUserIsLogin]) {
+        CollectionViewController *collection = [[CollectionViewController alloc]init];
+        collection.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:collection animated:YES];
+
+    }else{
+        MainLoginViewController *login = [[MainLoginViewController alloc] init];
+        [self presentViewController:login animated:YES completion:nil];
+    }
 }
 
 // 清理缓存
@@ -241,8 +279,8 @@
     [self.navigationController pushViewController:loacal animated:YES];
 }
 
-- (void)aboutUs{
-    // 协议条款
+- (void)pushToAboutUs{
+    // 关于我们
     LocalViewController *loacal = [[LocalViewController alloc]init];
     loacal.hidesBottomBarWhenPushed = YES;
     loacal.localStr = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
