@@ -10,6 +10,7 @@
 typedef enum : NSUInteger {
     TheMarktAllFuturesViewTypeDomestic,
     TheMarktAllFuturesViewTypeForegin,
+    TheMarktAllFuturesViewTypeForeignStockIndex,
 } TheMarktAllFuturesViewType;
 
 NS_ASSUME_NONNULL_BEGIN

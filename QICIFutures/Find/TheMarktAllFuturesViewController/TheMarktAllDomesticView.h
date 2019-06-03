@@ -27,6 +27,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic,copy) void(^selectRowBlock)(NSDictionary *dic);
 
+@property (nonatomic,copy) void(^selectBtnBlock)(NSString *title);
+
 @property (nonatomic,strong) NSMutableArray *headArray;
 
 @end

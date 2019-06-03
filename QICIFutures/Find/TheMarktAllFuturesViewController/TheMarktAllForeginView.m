@@ -79,16 +79,25 @@
                 case 0:
                 {
                     [weakSelf refreshWithType:AllFuturesInfoTypeForeignGoods];
+                    if (weakSelf.selectBtnBlock) {
+                        weakSelf.selectBtnBlock(@"商品期货");
+                    }
                 }
                     break;
                 case 1:
                 {
                     [weakSelf refreshWithType:AllFuturesInfoTypeForeignGuzhi];
+                    if (weakSelf.selectBtnBlock) {
+                        weakSelf.selectBtnBlock(@"股指期货");
+                    }
                 }
                     break;
                 case 2:
                 {
                     [weakSelf refreshWithType:AllFuturesInfoTypeForeignWaihui];
+                    if (weakSelf.selectBtnBlock) {
+                        weakSelf.selectBtnBlock(@"外汇期货");
+                    }
                 }
                     break;
                     

@@ -251,6 +251,7 @@
         };
         
         SVPShowInfo(1,@"操作成功", block);
+        
     }else{
         [SVProgressHUD showErrorWithStatus:@"网络连接失败"];
         [SVProgressHUD dismissWithDelay:1];
@@ -457,5 +458,11 @@
     }
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    if (self.isRefreshListView) {
+        self.isRefreshListView(self.isChangeAttentionStatus);
+    }
+}
 
 @end
