@@ -83,11 +83,17 @@
                 case 0:
                 {
                     [weakSelf refreshWithType:AllFuturesInfoTypeDomesticAll];
+                    if (weakSelf.selectBtnBlock) {
+                        weakSelf.selectBtnBlock(@"国内全部");
+                    }
                 }
                     break;
                 case 1:
                 {
                     [weakSelf refreshWithType:AllFuturesInfoTypeDomesticOil];
+                    if (weakSelf.selectBtnBlock) {
+                        weakSelf.selectBtnBlock(@"菜油期货");
+                    }
                 }
                     break;
                     

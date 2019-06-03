@@ -30,6 +30,15 @@
         [btn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
         
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+        
+    }else if([self.presentingViewController isKindOfClass:NSClassFromString(@"UITabBarController")]){
+        
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(0, 0, 40, 30);
+        [btn setImage:imageWithName(@"bt_navigation_white_nor") forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(preBackClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     }
 }
 
@@ -37,6 +46,11 @@
     
     [self.navigationController popViewControllerAnimated:YES];
     
+}
+
+-(void)preBackClick{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

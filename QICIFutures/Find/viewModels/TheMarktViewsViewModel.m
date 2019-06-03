@@ -10,6 +10,7 @@
 #import "TheMarktOthersTableViewCell.h"
 #import "TheMarktLookFuturesCell.h"
 #import "TheMarktAllFuturesViewController.h"
+#import "TheMarktMyAttentionViewController.h"
 
 @implementation TheMarktViewsViewModel
 
@@ -63,7 +64,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     if (section == 3) {
-        return 2;
+        return 3;
     }else{
        return 1;
     }
@@ -99,17 +100,32 @@
     
     if (indexPath.section == 3) {
         
-        TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
-        
         if (indexPath.row == 0) {
+            TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeDomestic;
             tmafVC.title = @"国内期货";
-        }else{
+            [vc.navigationController pushViewController:tmafVC animated:YES];
+        }else if(indexPath.row == 1){
+            TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";
+            [vc.navigationController pushViewController:tmafVC animated:YES];
+        }else{
+            
+            if (![TheMarktTools internetStatus]) {
+                [SVProgressHUD showErrorWithStatus:@"网络连接失败"];
+                [SVProgressHUD dismissWithDelay:1];
+            }else{
+                if ([SaveAndUseFuturesDataModel isLogin]) {
+                    TheMarktMyAttentionViewController *tmmaVC = [[TheMarktMyAttentionViewController alloc] init];
+                    [vc.navigationController pushViewController:tmmaVC animated:YES];
+                }else{
+                    [SVProgressHUD showErrorWithStatus:@"请先登录"];
+                    [SVProgressHUD dismissWithDelay:1];
+                }
+            }
+            
         }
-        
-        [vc.navigationController pushViewController:tmafVC animated:YES];
     }
 }
 
@@ -171,8 +187,10 @@
     
     if (indexPath.row == 0) {
         [cell buildWithTitle:@"查看国内期货" body:@"国内风雨.纵横捭阖" backColor:RGBColor(254, 215, 135)];
-    }else{
+    }else if(indexPath.row == 1){
         [cell buildWithTitle:@"查看国际期货" body:@"风云际会.金鳞岂是池中物" backColor:RGBColor(99, 185, 135)];
+    }else{
+        [cell buildWithTitle:@"查看关注期货" body:@"我关注的期货在这里" backColor:RGBColor(253, 93, 45)];
     }
     
     return cell;

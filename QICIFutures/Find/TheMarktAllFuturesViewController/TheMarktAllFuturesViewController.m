@@ -33,6 +33,10 @@
         [self.view addSubview:self.domesticView];
     }else{
         [self.view addSubview:self.foreginView];
+        if (self.type == TheMarktAllFuturesViewTypeForeignStockIndex) {
+            [self.foreginView.btnView selectIndex:1];
+            [self.foreginView refreshWithType:AllFuturesInfoTypeForeignGuzhi];
+        }
     }
 }
 
@@ -54,6 +58,7 @@
     
     if (!_foreginView) {
         _foreginView = [[TheMarktAllForeginView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, SCREEN_HEIGHT-kDeviceNavHeight-IS_IPHONE_X*24)];
+        
         weakSelf(self);
         _foreginView.selectRowBlock = ^(NSDictionary * _Nonnull dic) {
             [weakSelf selectRowWithType:@"2" andInfo:dic];

@@ -319,7 +319,9 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             tmafVC.title = @"国内期货";
 
             tmafVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:tmafVC animated:YES];
+//            [self.navigationController pushViewController:tmafVC animated:YES];
+            TheMarktBseNavigationViewController *nav = [[TheMarktBseNavigationViewController alloc] initWithRootViewController:tmafVC];
+            [self presentViewController:nav animated:YES completion:nil];
             }
             break;
             
@@ -329,9 +331,12 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";
-            tmafVC.navigationController.navigationBar.hidden = YES;
+//            tmafVC.navigationController.navigationBar.hidden = YES;
             tmafVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:tmafVC animated:YES];
+            
+//            [self.navigationController pushViewController:tmafVC animated:YES];
+            TheMarktBseNavigationViewController *nav = [[TheMarktBseNavigationViewController alloc] initWithRootViewController:tmafVC];
+            [self presentViewController:nav animated:YES completion:nil];
             
         }
             break;
@@ -343,10 +348,13 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 //            [self.navigationController pushViewController:indexVC animated:YES];
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             
-            tmafVC.type = TheMarktAllFuturesViewTypeForegin;
-            tmafVC.title = @"股指期货";
+            tmafVC.type = TheMarktAllFuturesViewTypeForeignStockIndex;
+            tmafVC.title = @"国际期货";
             tmafVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:tmafVC animated:YES];
+            
+            TheMarktBseNavigationViewController *nav = [[TheMarktBseNavigationViewController alloc] initWithRootViewController:tmafVC];
+            [self presentViewController:nav animated:YES completion:nil];
+//            [self.navigationController pushViewController:nav animated:YES];
             
             
         }

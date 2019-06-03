@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) NSString *infoType;
 
+@property (nonatomic,copy) void(^isRefreshListView)(BOOL isDo);
+
 @end
 
 NS_ASSUME_NONNULL_END
