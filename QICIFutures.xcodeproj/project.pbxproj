@@ -119,6 +119,7 @@
 		04CA6C1022A50F1F00412FFD /* QCMarketLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0F22A50F1E00412FFD /* QCMarketLogic.m */; };
 		04CA6C1322A50FDC00412FFD /* QCNewsLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C1222A50FDC00412FFD /* QCNewsLogic.m */; };
 		04CA6C4022A5186C00412FFD /* NSNumber+digitalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C3F22A5186C00412FFD /* NSNumber+digitalValue.m */; };
+		04CA6CAA22A53A5200412FFD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CA6CA922A53A5200412FFD /* logo.png */; };
 		04EABA4F22A115B800573FB0 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA4D22A115B800573FB0 /* MeTableViewCell.m */; };
 		04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */; };
 		04EABA5422A115E700573FB0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA5222A115E700573FB0 /* MeViewController.m */; };
@@ -375,6 +376,7 @@
 		04CA6C1222A50FDC00412FFD /* QCNewsLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCNewsLogic.m; sourceTree = "<group>"; };
 		04CA6C3E22A5186C00412FFD /* NSNumber+digitalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+digitalValue.h"; sourceTree = "<group>"; };
 		04CA6C3F22A5186C00412FFD /* NSNumber+digitalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+digitalValue.m"; sourceTree = "<group>"; };
+		04CA6CA922A53A5200412FFD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
@@ -992,6 +994,7 @@
 				D72224FE21A254BE00278111 /* Category */,
 				D72224EE21A253EB00278111 /* Main.storyboard */,
 				D72224F121A253EC00278111 /* Assets.xcassets */,
+				04CA6CA922A53A5200412FFD /* logo.png */,
 				0479B29B22A118FB003BBE34 /* Info.plist */,
 				D72224F321A253EC00278111 /* LaunchScreen.storyboard */,
 				D72224F721A253EC00278111 /* main.m */,
@@ -1196,6 +1199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CA6CAA22A53A5200412FFD /* logo.png in Resources */,
 				044017A022A35819003F2E3C /* index.html in Resources */,
 				04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */,
 				04B5397F22A4D17B00578EE4 /* NoDataTableViewCell.xib in Resources */,
