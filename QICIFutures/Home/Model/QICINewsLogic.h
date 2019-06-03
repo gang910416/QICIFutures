@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class QICINewsDetailModel;
+@class QCNewsDetailModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QICINewsLogic : NSObject
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param suc 成功回调
  @param faild 失败回调
  */
-+ (void)getNewsDetailWithNewsId:(NSString *)newsId blockSuccess:(void (^)(QICINewsDetailModel * _Nullable detailModel))suc faild:(void (^)(NSError * _Nullable error))faild;
++ (void)getNewsDetailWithNewsId:(NSString *)newsId blockSuccess:(void (^)(QCNewsDetailModel * _Nullable detailModel))suc faild:(void (^)(NSError * _Nullable error))faild;
 
 @end
 

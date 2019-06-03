@@ -42,8 +42,8 @@
     self.titleArr = @[@{
                           @"title":@[@""]
                           },@{
-                              @"title":@[@"给个好评",@"分享App",@"我的收藏"],
-                              @"image":@[@"1",@"2",@"3"]
+                              @"title":@[@"给个好评",@"我的收藏"],
+                              @"image":@[@"1",@"3"]
                               },@{
                               @"title":@[@"意见反馈",@"清理缓存",@"关于我们",@"隐私协议",@"联系我们"],
                               @"image":@[@"4",@"5",@"6",@"7",@"8"]
@@ -113,8 +113,6 @@
     if(indexPath.section == 1){
         if (indexPath.row == 0) {
             [self gotoCommit];
-        }else if (indexPath.row == 1) {
-            [self shareApp];
         }else{
             [self myCollection];
         }
@@ -217,7 +215,6 @@
     UIImage *imageToShare = GetImage(icon);
     //分享的url
     NSURL *urlToShare = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/cn/app/id%d?mt=8",1465232582]];
-    
     //在这里呢 如果想分享图片 就把图片添加进去  文字什么的通上
     NSArray *activityItems;
     

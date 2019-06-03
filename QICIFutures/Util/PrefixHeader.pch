@@ -49,8 +49,9 @@
 #import "QCNewsListModel.h"
 #import "QCNewsDetailModel.h"
 #import "UIView+Frame.h"
-#import "DataCenter.h"
-#import "ASDKLineView.h"
+
+
+#import "NSNumber+digitalValue.h"
 #import "UIFont+ScaleSize.h"
 #import "NSObject+DrawText.h"
 #import "QICIPublicEnum.h"
