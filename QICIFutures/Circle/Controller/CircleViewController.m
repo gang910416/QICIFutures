@@ -18,14 +18,10 @@
     [super viewDidLoad];
     self.navTitleSting = @"资讯";
     [self loadData];
-    
-    self.navBackGroundColor = RGBColor(235, 85, 75);
-    self.navTitleColor = [UIColor whiteColor];
     self.isHiddenShadow = YES;
     [self addTabPageBar];
     [self addPagerController];
     
-    // Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated{

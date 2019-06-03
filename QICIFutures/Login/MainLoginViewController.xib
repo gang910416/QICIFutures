@@ -54,16 +54,16 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到数字期货通，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-N6-FKq">
-                    <rect key="frame" x="30" y="199" width="184" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到迎客手机维修宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-N6-FKq">
+                    <rect key="frame" x="30" y="199" width="214.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a89-Q0-h0w">
-                    <rect key="frame" x="216" y="193" width="31" height="30"/>
+                    <rect key="frame" x="246.5" y="193" width="31" height="30"/>
                     <state key="normal" title="注册">
-                        <color key="titleColor" red="0.931234479" green="0.30430325870000002" blue="0.2654064894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="0.85228270289999997" green="0.22364121679999999" blue="0.24559685589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="clickRegsiterForLoginView:" destination="-1" eventType="touchUpInside" id="eAc-Vn-mgp"/>
@@ -103,13 +103,19 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6p-OC-lHS">
                     <rect key="frame" x="30" y="378.5" width="354" height="40"/>
-                    <color key="backgroundColor" red="0.93123447895050049" green="0.30430325865745544" blue="0.26540648937225342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="DgW-5w-U4X"/>
                     </constraints>
                     <state key="normal" title="登录">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="clickLoginBtn:" destination="-1" eventType="touchUpInside" id="d1Q-VW-pUG"/>
                     </connections>
@@ -167,16 +173,16 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到数字期货通，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-DG-epk">
-                    <rect key="frame" x="30" y="199" width="184" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到迎客手机维修宝，立即" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-DG-epk">
+                    <rect key="frame" x="30" y="199" width="214.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhi-kj-Rur">
-                    <rect key="frame" x="216" y="193" width="31" height="30"/>
+                    <rect key="frame" x="246.5" y="193" width="31" height="30"/>
                     <state key="normal" title="登录">
-                        <color key="titleColor" red="0.931234479" green="0.30430325870000002" blue="0.2654064894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="clickLoginForRegisterView:" destination="-1" eventType="touchUpInside" id="eZl-hE-JBE"/>
@@ -216,13 +222,19 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldg-4H-dmx">
                     <rect key="frame" x="30" y="429.5" width="354" height="40"/>
-                    <color key="backgroundColor" red="0.931234479" green="0.30430325870000002" blue="0.2654064894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.85228270292282104" green="0.22364121675491333" blue="0.24559685587882996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="qKF-oh-ASy"/>
                     </constraints>
                     <state key="normal" title="注册">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="clickLogoutBtn:" destination="-1" eventType="touchUpInside" id="OV6-5y-oDR"/>
                     </connections>
