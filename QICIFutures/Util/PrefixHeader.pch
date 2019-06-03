@@ -22,9 +22,9 @@
 #import <SDCycleScrollView.h>
 #import <YYText.h>
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import "QICIHTTPRequest.h"
 #import "TheMarktHeader.h"
-
+#import "TheMarktAllFuturesViewController.h"
 #import "NSObject+rubbish.h"
 #import <PYSearch/PYSearch.h>
 #import "SVProgressHUD.h"

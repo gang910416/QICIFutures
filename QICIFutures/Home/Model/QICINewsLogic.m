@@ -20,18 +20,19 @@
     
     NSDictionary *params = @{@"id":isStrEmpty(newsId) ? @"15577989028315098" : newsId,@"type":@"L295"};
     
-    [[HttpRequest sharedInstance] oneGet:APINewsDetail path:@"" parameters:params success:^(id responsData) {
+    [[QICIHTTPRequest sharedInstance]oneGet:APINewsDetail path:@"" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         QICINewsDetailModel *model = nil;
         
-        if (responsData) {
+        if (responseObject) {
             
-            model = [QICINewsDetailModel createModelWithReq:responsData];
+            model = [QICINewsDetailModel createModelWithReq:responseObject];
             
         }
         !suc ? : suc(model);
-    } faile:^(NSError *error) {
-          !faild ? : faild(error);
+    } faile:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        !faild ? : faild(error);
     }];
+  
     
 }
 

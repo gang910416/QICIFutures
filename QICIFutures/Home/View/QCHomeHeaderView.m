@@ -302,7 +302,7 @@
 }
 - (QCBtnSView *)mapView {
     if (!_mapView) {
-        _mapView = [[QCBtnSView alloc] initWithFrame:CGRectMake(0, 10, kDeviceWidth, SCALE_Length(120.0f)) titles:@[@"涨幅榜",@"跌幅榜",@"股指期货",@"资讯",@"快讯"] icons:@[@"icon_home_profit",@"icon_home_short",@"icon_home_suc",@"icon_home_news",@"icon_home_simulate"]];
+        _mapView = [[QCBtnSView alloc] initWithFrame:CGRectMake(0, 10, kDeviceWidth, SCALE_Length(120.0f)) titles:@[@"国内期货",@"国际期货",@"股指期货",@"资讯",@"快讯"] icons:@[@"icon_home_profit",@"icon_home_short",@"icon_home_suc",@"icon_home_news",@"icon_home_simulate"]];
         _mapView.backgroundColor = QICIColorGap;
         _mapView.delegate = self;
     }

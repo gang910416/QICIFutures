@@ -104,6 +104,9 @@
 		04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */; };
 		04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */; };
 		04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */; };
+		04CA6BDE22A4D19A00412FFD /* QICIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */; };
+		04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */; };
+		04CA6BE422A4D1FA00412FFD /* QICIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */; };
 		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
@@ -348,6 +351,12 @@
 		04A5412E22A3FF03001C0DE5 /* TheMarktNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktNewsModel.h; sourceTree = "<group>"; };
 		04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktNewsModel.m; sourceTree = "<group>"; };
 		04CA6BD822A4CD5500412FFD /* SaveAndUseFuturesDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndUseFuturesDataModel.h; sourceTree = "<group>"; };
+		04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIHTTPRequest.h; sourceTree = "<group>"; };
+		04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIHTTPRequest.m; sourceTree = "<group>"; };
+		04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIRequestSerializer.h; sourceTree = "<group>"; };
+		04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIRequestSerializer.m; sourceTree = "<group>"; };
+		04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIResponseSerializer.h; sourceTree = "<group>"; };
+		04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIResponseSerializer.m; sourceTree = "<group>"; };
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89109B94D3B8E64738812B44 /* libPods-ENGLISH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ENGLISH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1138,6 +1147,12 @@
 		D7C218C721A41A6A009458C2 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */,
+				04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */,
+				04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */,
+				04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */,
+				04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */,
+				04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */,
 				D7C218C821A41A6A009458C2 /* HttpRequest.m */,
 				D7C218C921A41A6A009458C2 /* HttpRequest.h */,
 			);
@@ -1323,6 +1338,7 @@
 				D722265821A2578F00278111 /* UIView+Cornor.m in Sources */,
 				04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */,
 				04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */,
+				04CA6BE422A4D1FA00412FFD /* QICIResponseSerializer.m in Sources */,
 				04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */,
 				04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */,
 				04A540E522A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m in Sources */,
@@ -1409,6 +1425,7 @@
 				04A5410C22A2CC9A001C0DE5 /* TheMarktAllForeginView.m in Sources */,
 				D72224EA21A253EB00278111 /* AppDelegate.m in Sources */,
 				0479B2EF22A3C1A4003BBE34 /* QICIMarketCollectionViewCell.m in Sources */,
+				04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */,
 				D722265A21A2578F00278111 /* NSMutableArray+Extension.m in Sources */,
 				0479B39A22A4822D003BBE34 /* SimpleKLineVolView.m in Sources */,
 				0479B30122A3D505003BBE34 /* QICINewsDetailModel.m in Sources */,
@@ -1434,6 +1451,7 @@
 				04A5411522A2D099001C0DE5 /* AllFuturesListHeader.m in Sources */,
 				04A540F922A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m in Sources */,
 				D7D8355A21B112ED000FE4DD /* FindViewController.m in Sources */,
+				04CA6BDE22A4D19A00412FFD /* QICIHTTPRequest.m in Sources */,
 				04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */,
 				04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */,
 				D722266021A2578F00278111 /* UITextView+Placeholder.m in Sources */,
