@@ -93,7 +93,7 @@
     self.dataArr = [NSArray array];
     [self.newsTable.mj_header endRefreshing];
     
-    [[YNWHttpRequest sharedInstance]GETRequestWithUrl:@"http://sjzqbj.csc108.com:9800//api/news20/list?req_count=20&req_funType=L295&req_sinceId=0" paramaters:nil successBlock:^(id object, NSURLResponse *response) {
+    [[HttpRequest sharedInstance]GETRequestWithUrl:@"http://sjzqbj.csc108.com:9800//api/news20/list?req_count=20&req_funType=L295&req_sinceId=0" paramaters:nil successBlock:^(id object, NSURLResponse *response) {
         NSLog(@"新闻数据%@",object);
         self.dataArr = object[@"news"];
         [self.newsTable reloadData];

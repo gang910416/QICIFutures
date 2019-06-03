@@ -66,7 +66,7 @@
     __weak __typeof(self) weakSelf = self;
     NSString *str = [NSString stringWithFormat:@"http://sjzqbj.csc108.com:9800//api/news20/detail/?id=%@&type=L295",self.newsid];
     
-    [[YNWHttpRequest sharedInstance]GETRequestWithUrl:str paramaters:nil successBlock:^(id object, NSURLResponse *response) {
+    [[HttpRequest sharedInstance]GETRequestWithUrl:str paramaters:nil successBlock:^(id object, NSURLResponse *response) {
         NSString *strHtml = [NSString stringWithFormat:@"<html> \n"
                              "<head> \n"
                              "<style type=\"text/css\"> \n"

@@ -136,7 +136,7 @@
     self.dataArr = [NSArray array];
     [self.newsTable.mj_header endRefreshing];
     [SVProgressHUD dismiss];
-    [[YNWHttpRequest sharedInstance]GETRequestWithUrl:@"https://mapi.followme.com/app/v1/social2/fire/news?pageIndex=1" paramaters:nil successBlock:^(id object, NSURLResponse *response) {
+    [[HttpRequest sharedInstance]GETRequestWithUrl:@"https://mapi.followme.com/app/v1/social2/fire/news?pageIndex=1" paramaters:nil successBlock:^(id object, NSURLResponse *response) {
         self.dataArr = object[@"data"][@"Items"][0][@"Items"];
         [self.newsTable reloadData];
     } FailBlock:^(NSError *error) {
