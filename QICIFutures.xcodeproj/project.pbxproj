@@ -121,7 +121,7 @@
 		04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */; };
 		04CA6BE422A4D1FA00412FFD /* QICIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */; };
 		04CA6BF622A4FBB300412FFD /* ASDNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */; };
-<<<<<<< HEAD
+
 		04CA6BFF22A509B100412FFD /* OrderBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BFD22A509B100412FFD /* OrderBookModel.m */; };
 		04CA6C0222A50ABF00412FFD /* QCMarketListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0122A50ABF00412FFD /* QCMarketListSectionHeaderView.m */; };
 		04CA6C0522A50AE900412FFD /* ASDMarketListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0322A50AE900412FFD /* ASDMarketListCell.m */; };
@@ -130,9 +130,7 @@
 		04CA6C1022A50F1F00412FFD /* QCMarketLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0F22A50F1E00412FFD /* QCMarketLogic.m */; };
 		04CA6C1322A50FDC00412FFD /* QCNewsLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C1222A50FDC00412FFD /* QCNewsLogic.m */; };
 		04CA6C4022A5186C00412FFD /* NSNumber+digitalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C3F22A5186C00412FFD /* NSNumber+digitalValue.m */; };
-=======
 
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
 		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
 		D72224F021A253EB00278111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72224EE21A253EB00278111 /* Main.storyboard */; };
@@ -379,7 +377,7 @@
 		04CA6BE522A4FB0A00412FFD /* QCNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCNewsListViewController.h; sourceTree = "<group>"; };
 		04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListCell.m; sourceTree = "<group>"; };
 		04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListCell.h; sourceTree = "<group>"; };
-<<<<<<< HEAD
+
 		04CA6BF722A508C600412FFD /* QCMarketLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMarketLogic.h; sourceTree = "<group>"; };
 		04CA6BFB22A5090D00412FFD /* QCSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSearchListViewController.h; sourceTree = "<group>"; };
 		04CA6BFD22A509B100412FFD /* OrderBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderBookModel.m; sourceTree = "<group>"; };
@@ -395,7 +393,7 @@
 		04CA6C1222A50FDC00412FFD /* QCNewsLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCNewsLogic.m; sourceTree = "<group>"; };
 		04CA6C3E22A5186C00412FFD /* NSNumber+digitalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+digitalValue.h"; sourceTree = "<group>"; };
 		04CA6C3F22A5186C00412FFD /* NSNumber+digitalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+digitalValue.m"; sourceTree = "<group>"; };
-=======
+
 
 		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
@@ -404,7 +402,7 @@
 		04EABA5222A115E700573FB0 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		04EABA5322A115E700573FB0 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89109B94D3B8E64738812B44 /* libPods-ENGLISH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ENGLISH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1026,15 +1024,15 @@
 		D72224FE21A254BE00278111 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				04CA6C3E22A5186C00412FFD /* NSNumber+digitalValue.h */,
 				04CA6C3F22A5186C00412FFD /* NSNumber+digitalValue.m */,
-=======
+
 				0440178422A13297003F2E3C /* UIColor+Category.h */,
 				0440178322A13296003F2E3C /* UIColor+Category.m */,
 				0440178022A13275003F2E3C /* UIView+CornerRadiusLayer.h */,
 				0440178122A13275003F2E3C /* UIView+CornerRadiusLayer.m */,
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				0479B3D622A49563003BBE34 /* NSString+Attribute.h */,
 				0479B3D722A49563003BBE34 /* NSString+Attribute.m */,
 				0479B3C022A48D3B003BBE34 /* NSString+GLDate.h */,
@@ -1364,12 +1362,11 @@
 				04A5412522A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m in Sources */,
 				04A5410622A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m in Sources */,
 				D722265E21A2578F00278111 /* UMTimeStamp.m in Sources */,
-<<<<<<< HEAD
-=======
+
 				04EABA4F22A115B800573FB0 /* MeTableViewCell.m in Sources */,
 				04B5397522A4C70A00578EE4 /* CollectionTableViewCell.m in Sources */,
 				0479B38B22A4822D003BBE34 /* KLineModel.m in Sources */,
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				0479B37F22A4822D003BBE34 /* ReachabilityManager.m in Sources */,
 				0479B2BC22A142E0003BBE34 /* NSString+NumberFormatter.m in Sources */,
 				04CA6BFF22A509B100412FFD /* OrderBookModel.m in Sources */,
@@ -1384,26 +1381,25 @@
 				04B5397E22A4D17B00578EE4 /* NoDataTableViewCell.m in Sources */,
 				04A540E822A280C1001C0DE5 /* TheMarktFastNewsScrollView.m in Sources */,
 				D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */,
-<<<<<<< HEAD
-=======
+
 				0479B38D22A4822D003BBE34 /* KLineVolDrawLogic.m in Sources */,
 
 
 				04CA6BE722A4FB0A00412FFD /* ASDNewsListViewController.m in Sources */,
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				D722267221A293F800278111 /* MeViewController.m in Sources */,
 
 				0479B2F222A3C1D0003BBE34 /* QICITitleMoreToolView.m in Sources */,
 				04A540EE22A28934001C0DE5 /* TheMarktFastNewsModel.m in Sources */,
 				0025DCEB21A314BE00227A0E /* AddViewController.m in Sources */,
 				0479B37B22A4822D003BBE34 /* KeyBoardManager.m in Sources */,
-<<<<<<< HEAD
+
 				D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */,
-=======
+
 				0479B39122A4822D003BBE34 /* BaseDrawLogic.m in Sources */,
 				0479B39622A4822D003BBE34 /* KLineKDJDrawLogic.m in Sources */,
 				0479B39D22A4822D003BBE34 /* ListMenuView.m in Sources */,
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				0479B37E22A4822D003BBE34 /* RectSelectedView.m in Sources */,
 				0479B2A622A121B1003BBE34 /* NSObject+rubbish.m in Sources */,
 				D72224F821A253EC00278111 /* main.m in Sources */,
@@ -1441,14 +1437,14 @@
 				D722265D21A2578F00278111 /* UIBarButtonItem+ImageTitleItem.m in Sources */,
 				0479B2F822A3CDB5003BBE34 /* QICIMarketListSectionHeaderView.m in Sources */,
 				0479B2C222A1F49C003BBE34 /* QCHomeDataMannger.m in Sources */,
-<<<<<<< HEAD
+
 				04CA6C0522A50AE900412FFD /* ASDMarketListCell.m in Sources */,
-=======
+
 				0479B39E22A4822D003BBE34 /* VerticalView.m in Sources */,
 				0479B38422A4822D003BBE34 /* DataCenter.m in Sources */,
 				0479B38A22A4822D003BBE34 /* NSValue+GLExtremeValue.m in Sources */,
 				0479B39022A4822D003BBE34 /* KLineMADrawLogic.m in Sources */,
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				D722267621A29A8600278111 /* UIMainConstructor.m in Sources */,
 				04CA6C1022A50F1F00412FFD /* QCMarketLogic.m in Sources */,
 				04A5410F22A2CCF1001C0DE5 /* AllFuturesTopBtnView.m in Sources */,
@@ -1474,11 +1470,10 @@
 				04A5410C22A2CC9A001C0DE5 /* TheMarktAllForeginView.m in Sources */,
 				D72224EA21A253EB00278111 /* AppDelegate.m in Sources */,
 				0479B2EF22A3C1A4003BBE34 /* QICIMarketCollectionViewCell.m in Sources */,
-<<<<<<< HEAD
+
 				04CA6C0E22A50EE000412FFD /* QCNewsListViewController.m in Sources */,
 				04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */,
-=======
->>>>>>> 5b9577350bab4cc55e78a8a62cc2167b03ff8065
+
 				D722265A21A2578F00278111 /* NSMutableArray+Extension.m in Sources */,
 				0479B30122A3D505003BBE34 /* QICINewsDetailModel.m in Sources */,
 				D7C218CA21A41A6A009458C2 /* HttpRequest.m in Sources */,
