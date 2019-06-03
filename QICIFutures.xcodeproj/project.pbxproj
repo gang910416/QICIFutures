@@ -30,6 +30,11 @@
 		044017C422A3FA39003F2E3C /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044017C322A3FA39003F2E3C /* NewsDetailViewController.m */; };
 		044017CF22A4B9B5003F2E3C /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044017CD22A4B9B5003F2E3C /* CollectionViewController.m */; };
 		044017D022A4B9B5003F2E3C /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044017CE22A4B9B5003F2E3C /* CollectionViewController.xib */; };
+		0451547B22A520B7006BDB0B /* ASDNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */; };
+		0451547C22A520C5006BDB0B /* ASDNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */; };
+		0451547D22A520D2006BDB0B /* ASDNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */; };
+		0451547E22A520EF006BDB0B /* ASDNewsLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */; };
+		0451547F22A52104006BDB0B /* ASDNewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */; };
 		0479B2A322A1210F003BBE34 /* QICIHideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B2A122A1210F003BBE34 /* QICIHideBarViewController.m */; };
 		0479B2A622A121B1003BBE34 /* NSObject+rubbish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B2A522A121B1003BBE34 /* NSObject+rubbish.m */; };
 		0479B2AF22A1354E003BBE34 /* MArketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B2AE22A1354E003BBE34 /* MArketTableViewCell.m */; };
@@ -428,6 +433,18 @@
 		04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIRequestSerializer.m; sourceTree = "<group>"; };
 		04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIResponseSerializer.h; sourceTree = "<group>"; };
 		04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIResponseSerializer.m; sourceTree = "<group>"; };
+		04CA6BE522A4FB0A00412FFD /* ASDNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListViewController.h; sourceTree = "<group>"; };
+		04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListViewController.m; sourceTree = "<group>"; };
+		04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsViewController.m; sourceTree = "<group>"; };
+		04CA6BE922A4FB3000412FFD /* ASDNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsViewController.h; sourceTree = "<group>"; };
+		04CA6BEB22A4FB7400412FFD /* ASDNewsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListModel.h; sourceTree = "<group>"; };
+		04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsDetailModel.m; sourceTree = "<group>"; };
+		04CA6BED22A4FB7400412FFD /* ASDNewsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListModel.m; sourceTree = "<group>"; };
+		04CA6BEE22A4FB7400412FFD /* ASDNewsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsDetailModel.h; sourceTree = "<group>"; };
+		04CA6BF122A4FB8900412FFD /* ASDNewsLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsLogic.h; sourceTree = "<group>"; };
+		04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsLogic.m; sourceTree = "<group>"; };
+		04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListCell.m; sourceTree = "<group>"; };
+		04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListCell.h; sourceTree = "<group>"; };
 		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
@@ -636,6 +653,8 @@
 		0479B29E22A11D01003BBE34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */,
+				04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */,
 				0479B3B822A48B51003BBE34 /* QICIMarketDetailView.h */,
 				0479B3B722A48B51003BBE34 /* QICIMarketDetailView.m */,
 				0479B2F622A3CDB4003BBE34 /* QICIMarketListSectionHeaderView.h */,
@@ -661,6 +680,10 @@
 		0479B29F22A11D01003BBE34 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BE922A4FB3000412FFD /* ASDNewsViewController.h */,
+				04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */,
+				04CA6BE522A4FB0A00412FFD /* ASDNewsListViewController.h */,
+				04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */,
 				0479B3A622A48595003BBE34 /* QICIIndexListViewController.h */,
 				0479B3A522A48595003BBE34 /* QICIIndexListViewController.m */,
 				0479B2BD22A1F3B2003BBE34 /* QICHomeViewController.h */,
@@ -674,6 +697,12 @@
 		0479B2A022A11D01003BBE34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BF122A4FB8900412FFD /* ASDNewsLogic.h */,
+				04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */,
+				04CA6BEE22A4FB7400412FFD /* ASDNewsDetailModel.h */,
+				04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */,
+				04CA6BEB22A4FB7400412FFD /* ASDNewsListModel.h */,
+				04CA6BED22A4FB7400412FFD /* ASDNewsListModel.m */,
 				0479B3A922A48785003BBE34 /* QICIMarketListProtocol.h */,
 				0479B30222A3D52F003BBE34 /* QICINewsLogic.h */,
 				0479B30322A3D52F003BBE34 /* QICINewsLogic.m */,
@@ -1524,6 +1553,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0451547F22A52104006BDB0B /* ASDNewsDetailModel.m in Sources */,
+				0451547E22A520EF006BDB0B /* ASDNewsLogic.m in Sources */,
+				0451547D22A520D2006BDB0B /* ASDNewsViewController.m in Sources */,
+				0451547C22A520C5006BDB0B /* ASDNewsListCell.m in Sources */,
+				0451547B22A520B7006BDB0B /* ASDNewsListViewController.m in Sources */,
 				04B5398322A4F60D00578EE4 /* QICIRequestSerializer.m in Sources */,
 				04B5398222A4F5FD00578EE4 /* QICIResponseSerializer.m in Sources */,
 				04B5398122A4F5C300578EE4 /* QICIHTTPRequest.m in Sources */,

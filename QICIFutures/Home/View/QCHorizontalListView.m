@@ -214,7 +214,7 @@ static NSString * horizontalListView_collectionView_cell_id_1 = @"horizontalList
 
 - (QICITitleMoreToolView *)moreView {
     if (!_moreView) {
-        _moreView = [[QICITitleMoreToolView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, SCALE_Length(40.0f)) titleString:@"股指" moreBtnTitle:@"查看更多"];
+        _moreView = [[QICITitleMoreToolView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, SCALE_Length(40.0f)) titleString:@"热门期货" moreBtnTitle:@"查看更多"];
         _moreView.delegate = self;
     }
     return _moreView;

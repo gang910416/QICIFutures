@@ -9,6 +9,10 @@
 #import "QCHomeHeaderView.h"
 #import "QICIMarketListSectionHeaderView.h"
 #import "QCNewsViewController.h"
+#import "ASDNewsListViewController.h"
+#import "ASDNewsListModel.h"
+#import "ASDNewsViewController.h"
+#import "ASDNewsListCell.h"
 @interface QICHomeViewController ()<
 UIScrollViewDelegate,
 UITableViewDelegate,
@@ -17,24 +21,28 @@ UITableViewDataSource
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong,nonatomic) NSArray *li_dataArray;
+@property (strong, nonatomic) NSMutableArray *newsDataSource;
 @property (strong, nonatomic) GLRefreshHeader *listRefreshHeader;
 @property (strong, nonatomic) UIScrollView *contentView;
 /** 搜索按钮  */
 @property (strong, nonatomic) UIButton *searchButton;
 @property (strong, nonatomic) QCHomeHeaderView *headerView;
-
+/** 是否是刷新数据 */
+@property (assign, nonatomic) BOOL isRefresh;
 /** sectionView */
 @property (strong, nonatomic) QICIMarketListSectionHeaderView *sectionView;
+@property (strong, nonatomic) NSString *newsId;
 @end
 
-static NSString *const homeCellId = @"homeCellId";
+static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 @implementation QICHomeViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
+    self.newsId = @"0";
+    self.isRefresh= YES;
     [self  lg_configUi];
-    
+    [self getNewsData];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -61,6 +69,43 @@ static NSString *const homeCellId = @"homeCellId";
     
 }
 
+-(void)getNewsData{
+    [SVProgressHUD show];
+    weakSelf(self);
+    [QCHomeDataMannger getHomeNewsWithSinceId:self.newsId count:20 blockSuccess:^(NSArray<ASDNewsListModel *> * _Nonnull list) {
+        
+        [SVProgressHUD dismiss];
+        [weakSelf.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_footer endRefreshing];
+        self.newsDataSource = [list mutableCopy];
+        [weakSelf p_processDataWithList:list];
+        
+    } faild:^(NSError * _Nonnull error) {
+        
+        [SVProgressHUD dismiss];
+        [weakSelf.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_footer endRefreshing];
+        
+    }];
+
+}
+- (void)p_processDataWithList:(NSArray *)list {
+    
+    if (list && list.count > 0) {
+        if (self.isRefresh) {
+            [self.newsDataSource removeAllObjects];
+            [self.newsDataSource addObjectsFromArray:list];
+        }else {
+            [self.newsDataSource addObjectsFromArray:list];
+        }
+        weakSelf(self);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.tableView reloadData];
+        });
+    }
+    
+    self.isRefresh = NO;
+}
 
 -(void)lg_configUi{
     
@@ -101,49 +146,59 @@ static NSString *const homeCellId = @"homeCellId";
 }
 
 
-#pragma mark - tableviewDelegate ---
+#pragma mark - tableiview delegate ---
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.li_dataArray.count;
+    return self.newsDataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    MArketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeCellId forIndexPath:indexPath];
-    QICIMarkeModel *model = [self.li_dataArray objectAtIndex:indexPath.row];
-    [cell updataWithMarketModel:model indexPath:indexPath];
+    ASDNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
+    ASDNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
+    [cell updateDataWithModel:model];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return SCALE_Length(60.0f);
+    return SCALE_Length(90.0f);
 }
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-
-    return self.sectionView;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return SCALE_Length(40.0f);
+    return SCALE_Length(20.0f);
 }
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//
+//    return self.sectionView;
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    QICIMarketListModel *model = self.dataSource[indexPath.row];
-//
-//    if (model) {
-//        QICIMarketDetailViewController *detailVC = [[QICIMarketDetailViewController alloc] initWithMarketListModel:model];
-//        detailVC.hidesBottomBarWhenPushed = YES;
-//        [self.navigationController pushViewController:detailVC animated:YES];
-//    }
+    ASDNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
+    
+    if (model) {
+        
+        ASDNewsViewController *detailVC = [[ASDNewsViewController alloc] initWithNewsId:model.newsId];
+        detailVC.title = model.title;
+        detailVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.001;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 
 #pragma  --------------懒加载
 
@@ -179,7 +234,7 @@ static NSString *const homeCellId = @"homeCellId";
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.tableHeaderView = self.headerView;
         _tableView.mj_header = self.listRefreshHeader;
-        [_tableView registerClass:[MArketTableViewCell class] forCellReuseIdentifier:homeCellId];
+        [_tableView registerClass:[ASDNewsListCell class] forCellReuseIdentifier:ASDNewsListViewCell_id_1];
     }
     return _tableView;
 }
@@ -187,7 +242,7 @@ static NSString *const homeCellId = @"homeCellId";
 
 - (QCHomeHeaderView *)headerView {
     if (!_headerView) {
-        _headerView = [[QCHomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, SCALE_Length(490.0f)+ SCALE_Length(160))];
+        _headerView = [[QCHomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, SCALE_Length(490.0f)+ SCALE_Length(120))];
         weakSelf(self);
 //                _headerView.backgroundColor = [UIColor redColor];
         _headerView.newsSelectedBlock = ^(QCNewsListModel * _Nonnull newsModel) {
@@ -199,11 +254,7 @@ static NSString *const homeCellId = @"homeCellId";
         };
         
         _headerView.indexSelectedBlock = ^(QICIMarkeModel * _Nullable selectedListModel, BOOL isShowList) {
-            if (isShowList) {
-                [weakSelf showIndexList];
-            }else {
-                [weakSelf p_skipToIndexDetailWithListModel:selectedListModel];
-            }
+             [weakSelf p_skipToDetailControllerWithIndex:1];
         };
         _headerView.btnSelectedBlock = ^(NSInteger Tag) {
             if (Tag == 10) {
@@ -246,16 +297,21 @@ static NSString *const homeCellId = @"homeCellId";
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeDomestic;
             tmafVC.title = @"国内期货";
-               [self.navigationController pushViewController:tmafVC animated:YES];
-        }
+
+            tmafVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:tmafVC animated:YES];
+            }
             break;
             
         case 1:
         {
+
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";
+            tmafVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tmafVC animated:YES];
+            
         }
             break;
         case 2:
@@ -269,10 +325,10 @@ static NSString *const homeCellId = @"homeCellId";
             break;
         case 3:
         {
-//            QICINewsListViewController *newsListVC = [[QICINewsListViewController alloc] initWithNeedBackBtn:YES];
-//            newsListVC.hidesBottomBarWhenPushed = YES;
-//            newsListVC.title = @"资讯";
-//            [self.navigationController pushViewController:newsListVC animated:YES];
+            ASDNewsListViewController *newsListVC = [[ASDNewsListViewController alloc] initWithNeedBackBtn:YES];
+            newsListVC.hidesBottomBarWhenPushed = YES;
+            newsListVC.title = @"资讯";
+            [self.navigationController pushViewController:newsListVC animated:YES];
         }
             break;
         case 4:
