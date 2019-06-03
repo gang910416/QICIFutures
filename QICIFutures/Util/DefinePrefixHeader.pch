@@ -53,7 +53,7 @@
 #define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 #define kDeviceTabBarHeight self.tabBarController.tabBar.bounds.size.height
-#define kDeviceNavHeight  [UIApplication sharedApplication].statusBarFrame.size.height + 44
+#define kDeviceNavHeight  ([UIApplication sharedApplication].statusBarFrame.size.height + 44)
 
 #define STRINGNOTNIL(string) string.length==0?@"":string
 /** 控件缩放比例，按照宽度计算 */

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7010463BDD675990962C87C8071C2ADA"
+               BlueprintIdentifier = "53C3394214A1F4CD27EE11B0063BB7CA"
                BuildableName = "QWAlertView.framework"
                BlueprintName = "QWAlertView"
                ReferencedContainer = "container:Pods.xcodeproj">

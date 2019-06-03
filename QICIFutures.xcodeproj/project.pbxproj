@@ -77,6 +77,33 @@
 		0479B3D422A48F3B003BBE34 /* JMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B3D122A48F3B003BBE34 /* JMBaseButton.m */; };
 		0479B3D522A48F3B003BBE34 /* JMBaseButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B3D322A48F3B003BBE34 /* JMBaseButtonConfig.m */; };
 		0479B3D822A49563003BBE34 /* NSString+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B3D722A49563003BBE34 /* NSString+Attribute.m */; };
+		0479B3DC22A4C308003BBE34 /* SaveAndUseFuturesDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479B3DA22A4C308003BBE34 /* SaveAndUseFuturesDataModel.m */; };
+		04A540DF22A26BCC001C0DE5 /* TheMarktRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540DE22A26BCC001C0DE5 /* TheMarktRequestViewModel.m */; };
+		04A540E222A26F9F001C0DE5 /* TheMarktViewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540E122A26F9F001C0DE5 /* TheMarktViewsViewModel.m */; };
+		04A540E522A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540E422A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m */; };
+		04A540E822A280C1001C0DE5 /* TheMarktFastNewsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540E722A280C1001C0DE5 /* TheMarktFastNewsScrollView.m */; };
+		04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540EA22A28645001C0DE5 /* TheMarktTools.m */; };
+		04A540EE22A28934001C0DE5 /* TheMarktFastNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540ED22A28934001C0DE5 /* TheMarktFastNewsModel.m */; };
+		04A540F122A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540F022A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m */; };
+		04A540F522A2BB32001C0DE5 /* LearnWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540F422A2BB32001C0DE5 /* LearnWebViewController.m */; };
+		04A540F922A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540F822A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m */; };
+		04A540FC22A2BD9B001C0DE5 /* TheMarktBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540FB22A2BD9B001C0DE5 /* TheMarktBaseViewController.m */; };
+		04A540FF22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A540FE22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m */; };
+		04A5410222A2C976001C0DE5 /* TheMarktLookFuturesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5410122A2C976001C0DE5 /* TheMarktLookFuturesCell.m */; };
+		04A5410622A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5410522A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m */; };
+		04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5410822A2CC7D001C0DE5 /* TheMarktAllDomesticView.m */; };
+		04A5410C22A2CC9A001C0DE5 /* TheMarktAllForeginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5410B22A2CC9A001C0DE5 /* TheMarktAllForeginView.m */; };
+		04A5410F22A2CCF1001C0DE5 /* AllFuturesTopBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5410D22A2CCF0001C0DE5 /* AllFuturesTopBtnView.m */; };
+		04A5411222A2CD81001C0DE5 /* AllFuturesListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411022A2CD80001C0DE5 /* AllFuturesListTableViewCell.m */; };
+		04A5411522A2D099001C0DE5 /* AllFuturesListHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411422A2D099001C0DE5 /* AllFuturesListHeader.m */; };
+		04A5411822A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411722A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m */; };
+		04A5411C22A2D963001C0DE5 /* FuturesKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411B22A2D963001C0DE5 /* FuturesKModel.m */; };
+		04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5411D22A2DAD9001C0DE5 /* Reachability.m */; };
+		04A5412422A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */; };
+		04A5412522A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412222A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m */; };
+		04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */; };
+		04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */; };
+		04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */; };
 		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D70847FD21ACF79200EDCEA9 /* MainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D70847FC21ACF79200EDCEA9 /* MainLoginViewController.m */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
@@ -266,6 +293,61 @@
 		0479B3D322A48F3B003BBE34 /* JMBaseButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBaseButtonConfig.m; sourceTree = "<group>"; };
 		0479B3D622A49563003BBE34 /* NSString+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Attribute.h"; sourceTree = "<group>"; };
 		0479B3D722A49563003BBE34 /* NSString+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Attribute.m"; sourceTree = "<group>"; };
+		0479B3DA22A4C308003BBE34 /* SaveAndUseFuturesDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAndUseFuturesDataModel.m; sourceTree = "<group>"; };
+		0479B3DB22A4C308003BBE34 /* SaveAndUseFuturesDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndUseFuturesDataModel.h; sourceTree = "<group>"; };
+		04A540D922A26172001C0DE5 /* TheMarktHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktHeader.h; sourceTree = "<group>"; };
+		04A540DD22A26BCC001C0DE5 /* TheMarktRequestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktRequestViewModel.h; sourceTree = "<group>"; };
+		04A540DE22A26BCC001C0DE5 /* TheMarktRequestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktRequestViewModel.m; sourceTree = "<group>"; };
+		04A540E022A26F9F001C0DE5 /* TheMarktViewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktViewsViewModel.h; sourceTree = "<group>"; };
+		04A540E122A26F9F001C0DE5 /* TheMarktViewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktViewsViewModel.m; sourceTree = "<group>"; };
+		04A540E322A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktScrollNewsTableViewCell.h; sourceTree = "<group>"; };
+		04A540E422A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktScrollNewsTableViewCell.m; sourceTree = "<group>"; };
+		04A540E622A280C1001C0DE5 /* TheMarktFastNewsScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktFastNewsScrollView.h; sourceTree = "<group>"; };
+		04A540E722A280C1001C0DE5 /* TheMarktFastNewsScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktFastNewsScrollView.m; sourceTree = "<group>"; };
+		04A540E922A28645001C0DE5 /* TheMarktTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktTools.h; sourceTree = "<group>"; };
+		04A540EA22A28645001C0DE5 /* TheMarktTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktTools.m; sourceTree = "<group>"; };
+		04A540EC22A28934001C0DE5 /* TheMarktFastNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktFastNewsModel.h; sourceTree = "<group>"; };
+		04A540ED22A28934001C0DE5 /* TheMarktFastNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktFastNewsModel.m; sourceTree = "<group>"; };
+		04A540EF22A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktLearnsTableViewCell.h; sourceTree = "<group>"; };
+		04A540F022A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktLearnsTableViewCell.m; sourceTree = "<group>"; };
+		04A540F322A2BB32001C0DE5 /* LearnWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnWebViewController.h; sourceTree = "<group>"; };
+		04A540F422A2BB32001C0DE5 /* LearnWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnWebViewController.m; sourceTree = "<group>"; };
+		04A540F722A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktBseNavigationViewController.h; sourceTree = "<group>"; };
+		04A540F822A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktBseNavigationViewController.m; sourceTree = "<group>"; };
+		04A540FA22A2BD9B001C0DE5 /* TheMarktBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktBaseViewController.h; sourceTree = "<group>"; };
+		04A540FB22A2BD9B001C0DE5 /* TheMarktBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktBaseViewController.m; sourceTree = "<group>"; };
+		04A540FD22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktOthersTableViewCell.h; sourceTree = "<group>"; };
+		04A540FE22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktOthersTableViewCell.m; sourceTree = "<group>"; };
+		04A5410022A2C976001C0DE5 /* TheMarktLookFuturesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktLookFuturesCell.h; sourceTree = "<group>"; };
+		04A5410122A2C976001C0DE5 /* TheMarktLookFuturesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktLookFuturesCell.m; sourceTree = "<group>"; };
+		04A5410422A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktAllFuturesViewController.h; sourceTree = "<group>"; };
+		04A5410522A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktAllFuturesViewController.m; sourceTree = "<group>"; };
+		04A5410722A2CC7D001C0DE5 /* TheMarktAllDomesticView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktAllDomesticView.h; sourceTree = "<group>"; };
+		04A5410822A2CC7D001C0DE5 /* TheMarktAllDomesticView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktAllDomesticView.m; sourceTree = "<group>"; };
+		04A5410A22A2CC9A001C0DE5 /* TheMarktAllForeginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktAllForeginView.h; sourceTree = "<group>"; };
+		04A5410B22A2CC9A001C0DE5 /* TheMarktAllForeginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktAllForeginView.m; sourceTree = "<group>"; };
+		04A5410D22A2CCF0001C0DE5 /* AllFuturesTopBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFuturesTopBtnView.m; sourceTree = "<group>"; };
+		04A5410E22A2CCF1001C0DE5 /* AllFuturesTopBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFuturesTopBtnView.h; sourceTree = "<group>"; };
+		04A5411022A2CD80001C0DE5 /* AllFuturesListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFuturesListTableViewCell.m; sourceTree = "<group>"; };
+		04A5411122A2CD80001C0DE5 /* AllFuturesListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFuturesListTableViewCell.h; sourceTree = "<group>"; };
+		04A5411322A2D099001C0DE5 /* AllFuturesListHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFuturesListHeader.h; sourceTree = "<group>"; };
+		04A5411422A2D099001C0DE5 /* AllFuturesListHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFuturesListHeader.m; sourceTree = "<group>"; };
+		04A5411622A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktFuturesInfoViewController.h; sourceTree = "<group>"; };
+		04A5411722A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktFuturesInfoViewController.m; sourceTree = "<group>"; };
+		04A5411A22A2D963001C0DE5 /* FuturesKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuturesKModel.h; sourceTree = "<group>"; };
+		04A5411B22A2D963001C0DE5 /* FuturesKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuturesKModel.m; sourceTree = "<group>"; };
+		04A5411D22A2DAD9001C0DE5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		04A5411E22A2DAD9001C0DE5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		04A5412022A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultchartsTableViewCell.h; sourceTree = "<group>"; };
+		04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchIResultDataTableViewCell.m; sourceTree = "<group>"; };
+		04A5412222A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultchartsTableViewCell.m; sourceTree = "<group>"; };
+		04A5412322A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchIResultDataTableViewCell.h; sourceTree = "<group>"; };
+		04A5412722A3FB15001C0DE5 /* TheMarktRequestNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktRequestNewsModel.h; sourceTree = "<group>"; };
+		04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktRequestNewsModel.m; sourceTree = "<group>"; };
+		04A5412A22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktFuturesNewsTableViewCell.h; sourceTree = "<group>"; };
+		04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktFuturesNewsTableViewCell.m; sourceTree = "<group>"; };
+		04A5412E22A3FF03001C0DE5 /* TheMarktNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMarktNewsModel.h; sourceTree = "<group>"; };
+		04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMarktNewsModel.m; sourceTree = "<group>"; };
 		09C6A90CBFA7A6550E0A9CD8 /* Pods-ENGLISH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENGLISH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ENGLISH/Pods-ENGLISH.debug.xcconfig"; sourceTree = "<group>"; };
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,8 +426,16 @@
 		0025DCE021A312D500227A0E /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				04A5411922A2D247001C0DE5 /* TheMarktFuturesInfoViewController */,
+				04A5410322A2CBCF001C0DE5 /* TheMarktAllFuturesViewController */,
+				04A540F622A2BD53001C0DE5 /* TheMarktBaseViews */,
+				04A540F222A2BAF7001C0DE5 /* LearnWebViewController */,
+				04A540DC22A26BA5001C0DE5 /* models */,
+				04A540DB22A26B92001C0DE5 /* viewModels */,
+				04A540DA22A26B8C001C0DE5 /* views */,
 				D7D8355821B112ED000FE4DD /* FindViewController.h */,
 				D7D8355921B112ED000FE4DD /* FindViewController.m */,
+				04A540D522A25E6A001C0DE5 /* SaveDataUtil */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -743,6 +833,132 @@
 			path = JMBaseButton;
 			sourceTree = "<group>";
 		};
+		04A540D522A25E6A001C0DE5 /* SaveDataUtil */ = {
+			isa = PBXGroup;
+			children = (
+				0479B3DB22A4C308003BBE34 /* SaveAndUseFuturesDataModel.h */,
+				0479B3DA22A4C308003BBE34 /* SaveAndUseFuturesDataModel.m */,
+			);
+			path = SaveDataUtil;
+			sourceTree = "<group>";
+		};
+		04A540DA22A26B8C001C0DE5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				04A540E322A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.h */,
+				04A540E422A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m */,
+				04A540E622A280C1001C0DE5 /* TheMarktFastNewsScrollView.h */,
+				04A540E722A280C1001C0DE5 /* TheMarktFastNewsScrollView.m */,
+				04A540EF22A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.h */,
+				04A540F022A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m */,
+				04A540FD22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.h */,
+				04A540FE22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m */,
+				04A5410022A2C976001C0DE5 /* TheMarktLookFuturesCell.h */,
+				04A5410122A2C976001C0DE5 /* TheMarktLookFuturesCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		04A540DB22A26B92001C0DE5 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04A540DD22A26BCC001C0DE5 /* TheMarktRequestViewModel.h */,
+				04A540DE22A26BCC001C0DE5 /* TheMarktRequestViewModel.m */,
+				04A540E022A26F9F001C0DE5 /* TheMarktViewsViewModel.h */,
+				04A540E122A26F9F001C0DE5 /* TheMarktViewsViewModel.m */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		04A540DC22A26BA5001C0DE5 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				04A5411E22A2DAD9001C0DE5 /* Reachability.h */,
+				04A5411D22A2DAD9001C0DE5 /* Reachability.m */,
+				04A540E922A28645001C0DE5 /* TheMarktTools.h */,
+				04A540EA22A28645001C0DE5 /* TheMarktTools.m */,
+				04A540EC22A28934001C0DE5 /* TheMarktFastNewsModel.h */,
+				04A540ED22A28934001C0DE5 /* TheMarktFastNewsModel.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		04A540F222A2BAF7001C0DE5 /* LearnWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A540F322A2BB32001C0DE5 /* LearnWebViewController.h */,
+				04A540F422A2BB32001C0DE5 /* LearnWebViewController.m */,
+			);
+			path = LearnWebViewController;
+			sourceTree = "<group>";
+		};
+		04A540F622A2BD53001C0DE5 /* TheMarktBaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				04A540F722A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.h */,
+				04A540F822A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m */,
+				04A540FA22A2BD9B001C0DE5 /* TheMarktBaseViewController.h */,
+				04A540FB22A2BD9B001C0DE5 /* TheMarktBaseViewController.m */,
+			);
+			path = TheMarktBaseViews;
+			sourceTree = "<group>";
+		};
+		04A5410322A2CBCF001C0DE5 /* TheMarktAllFuturesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A5411322A2D099001C0DE5 /* AllFuturesListHeader.h */,
+				04A5411422A2D099001C0DE5 /* AllFuturesListHeader.m */,
+				04A5411122A2CD80001C0DE5 /* AllFuturesListTableViewCell.h */,
+				04A5411022A2CD80001C0DE5 /* AllFuturesListTableViewCell.m */,
+				04A5410E22A2CCF1001C0DE5 /* AllFuturesTopBtnView.h */,
+				04A5410D22A2CCF0001C0DE5 /* AllFuturesTopBtnView.m */,
+				04A5410422A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.h */,
+				04A5410522A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m */,
+				04A5410722A2CC7D001C0DE5 /* TheMarktAllDomesticView.h */,
+				04A5410822A2CC7D001C0DE5 /* TheMarktAllDomesticView.m */,
+				04A5410A22A2CC9A001C0DE5 /* TheMarktAllForeginView.h */,
+				04A5410B22A2CC9A001C0DE5 /* TheMarktAllForeginView.m */,
+			);
+			path = TheMarktAllFuturesViewController;
+			sourceTree = "<group>";
+		};
+		04A5411922A2D247001C0DE5 /* TheMarktFuturesInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A5412D22A3FEEB001C0DE5 /* model */,
+				04A5412622A3FAF5001C0DE5 /* viewModel */,
+				04A5412322A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.h */,
+				04A5412122A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m */,
+				04A5412022A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.h */,
+				04A5412222A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m */,
+				04A5411A22A2D963001C0DE5 /* FuturesKModel.h */,
+				04A5411B22A2D963001C0DE5 /* FuturesKModel.m */,
+				04A5411622A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.h */,
+				04A5411722A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m */,
+				04A5412A22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.h */,
+				04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */,
+			);
+			path = TheMarktFuturesInfoViewController;
+			sourceTree = "<group>";
+		};
+		04A5412622A3FAF5001C0DE5 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A5412722A3FB15001C0DE5 /* TheMarktRequestNewsModel.h */,
+				04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		04A5412D22A3FEEB001C0DE5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04A5412E22A3FF03001C0DE5 /* TheMarktNewsModel.h */,
+				04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		4D447A0D76C7B44295A1AA7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -878,6 +1094,7 @@
 				D72225D721A254E200278111 /* PrefixHeader.pch */,
 				0479B3A422A48555003BBE34 /* QICIPublicEnum.h */,
 				D72225DC21A254E200278111 /* DefinePrefixHeader.pch */,
+				04A540D922A26172001C0DE5 /* TheMarktHeader.h */,
 				0025DCEC21A3234300227A0E /* Base */,
 				D722267321A29A7300278111 /* Main */,
 			);
@@ -1022,9 +1239,11 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LEETheme/LEETheme.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PYSearch/PYSearch.framework",
+				"${BUILT_PRODUCTS_DIR}/QCLineView/QCLineView.framework",
 				"${BUILT_PRODUCTS_DIR}/QWAlertView/QWAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
@@ -1046,9 +1265,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LEETheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PYSearch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QCLineView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QWAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
@@ -1090,26 +1311,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A5410222A2C976001C0DE5 /* TheMarktLookFuturesCell.m in Sources */,
+				04A540FF22A2C05D001C0DE5 /* TheMarktOthersTableViewCell.m in Sources */,
 				D722265921A2578F00278111 /* NoHighlightButton.m in Sources */,
 				0479B39822A4822D003BBE34 /* GLConstantDefinition.m in Sources */,
 				0479B2F522A3C83A003BBE34 /* UIView+CenterLoading.m in Sources */,
 				D722265821A2578F00278111 /* UIView+Cornor.m in Sources */,
 				0479B2EC22A3C153003BBE34 /* QCHorizontalListView.m in Sources */,
 				0479B39722A4822D003BBE34 /* KLineBGDrawLogic.m in Sources */,
+				04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */,
+				04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */,
+				04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */,
+				04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */,
+				04A540E522A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m in Sources */,
+				D722265821A2578F00278111 /* UIView+Cornor.m in Sources */,
+				04A540E222A26F9F001C0DE5 /* TheMarktViewsViewModel.m in Sources */,
 				D722265B21A2578F00278111 /* UITableViewCell+UMReusable.m in Sources */,
+				04A5412522A2DC3B001C0DE5 /* SearchResultchartsTableViewCell.m in Sources */,
+				04A5410622A2CBF6001C0DE5 /* TheMarktAllFuturesViewController.m in Sources */,
 				D722265E21A2578F00278111 /* UMTimeStamp.m in Sources */,
 				0479B38B22A4822D003BBE34 /* KLineModel.m in Sources */,
 				0479B37F22A4822D003BBE34 /* ReachabilityManager.m in Sources */,
 				0479B2BC22A142E0003BBE34 /* NSString+NumberFormatter.m in Sources */,
+				04A540F522A2BB32001C0DE5 /* LearnWebViewController.m in Sources */,
+				0479B3DC22A4C308003BBE34 /* SaveAndUseFuturesDataModel.m in Sources */,
 				D722266321A2578F00278111 /* NSData+UMExtensions.m in Sources */,
 				0479B38322A4822D003BBE34 /* GLRefreshHeader.m in Sources */,
 				0026C97D21AEE77D0025E89E /* NSMutableAttributedString+Extension.m in Sources */,
+				04A540E822A280C1001C0DE5 /* TheMarktFastNewsScrollView.m in Sources */,
 				D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */,
 				0479B38D22A4822D003BBE34 /* KLineVolDrawLogic.m in Sources */,
 				D722267221A293F800278111 /* MeViewController.m in Sources */,
 				0479B2F222A3C1D0003BBE34 /* QICITitleMoreToolView.m in Sources */,
 				0479B38622A4822D003BBE34 /* KLineIndicatorLogic.m in Sources */,
 				0479B39322A4822D003BBE34 /* KLineMACDDrawLogic.m in Sources */,
+				04A540EE22A28934001C0DE5 /* TheMarktFastNewsModel.m in Sources */,
 				0025DCEB21A314BE00227A0E /* AddViewController.m in Sources */,
 				0479B37B22A4822D003BBE34 /* KeyBoardManager.m in Sources */,
 				0479B39122A4822D003BBE34 /* BaseDrawLogic.m in Sources */,
@@ -1130,12 +1366,17 @@
 				0479B3B922A48B51003BBE34 /* QICIMarketDetailView.m in Sources */,
 				0479B39922A4822D003BBE34 /* DetailDataView.m in Sources */,
 				0479B39F22A4822D003BBE34 /* HorizontalView.m in Sources */,
+				04A5411C22A2D963001C0DE5 /* FuturesKModel.m in Sources */,
+				04A5411222A2CD81001C0DE5 /* AllFuturesListTableViewCell.m in Sources */,
 				D722265621A2578F00278111 /* UILabel+label.m in Sources */,
 				0479B2BF22A1F3B2003BBE34 /* QICHomeViewController.m in Sources */,
 				D722266421A2578F00278111 /* NSString+UMExtensions.m in Sources */,
 				0479B3A022A4822D003BBE34 /* TabControlView.m in Sources */,
 				0479B3A322A483CE003BBE34 /* UIFont+ScaleSize.m in Sources */,
+				04A540DF22A26BCC001C0DE5 /* TheMarktRequestViewModel.m in Sources */,
+				04A5412422A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m in Sources */,
 				D722265721A2578F00278111 /* NSDate+UMExtensions.m in Sources */,
+				04A540FC22A2BD9B001C0DE5 /* TheMarktBaseViewController.m in Sources */,
 				D722265D21A2578F00278111 /* UIBarButtonItem+ImageTitleItem.m in Sources */,
 				0479B2F822A3CDB5003BBE34 /* QICIMarketListSectionHeaderView.m in Sources */,
 				0479B2C222A1F49C003BBE34 /* QCHomeDataMannger.m in Sources */,
@@ -1145,8 +1386,10 @@
 				0479B39022A4822D003BBE34 /* KLineMADrawLogic.m in Sources */,
 				D722267621A29A8600278111 /* UIMainConstructor.m in Sources */,
 				0479B38522A4822D003BBE34 /* KLineDataLogic.m in Sources */,
+				04A5410F22A2CCF1001C0DE5 /* AllFuturesTopBtnView.m in Sources */,
 				D722266121A2578F00278111 /* UILabel+Copy.m in Sources */,
 				D722265C21A2578F00278111 /* FileCacheManager.m in Sources */,
+				04A540F122A29EF4001C0DE5 /* TheMarktLearnsTableViewCell.m in Sources */,
 				D722265521A2578F00278111 /* UIView+Frame.m in Sources */,
 				0479B37D22A4822D003BBE34 /* RectSelectedViewCell.m in Sources */,
 				0479B39522A4822D003BBE34 /* KLineTimeDrawLogic.m in Sources */,
@@ -1158,6 +1401,7 @@
 				0479B2DC22A3A1D2003BBE34 /* QCBtnSView.m in Sources */,
 				0479B39222A4822D003BBE34 /* KLineRSIDrawLogic.m in Sources */,
 				0025DCE721A313F700227A0E /* CircleViewController.m in Sources */,
+				04A5410C22A2CC9A001C0DE5 /* TheMarktAllForeginView.m in Sources */,
 				D72224EA21A253EB00278111 /* AppDelegate.m in Sources */,
 				0479B2EF22A3C1A4003BBE34 /* QICIMarketCollectionViewCell.m in Sources */,
 				D722265A21A2578F00278111 /* NSMutableArray+Extension.m in Sources */,
@@ -1182,6 +1426,13 @@
 				0479B2FB22A3D46B003BBE34 /* QCNewsViewController.m in Sources */,
 				D722266021A2578F00278111 /* UITextView+Placeholder.m in Sources */,
 				0479B3D822A49563003BBE34 /* NSString+Attribute.m in Sources */,
+				04A5411522A2D099001C0DE5 /* AllFuturesListHeader.m in Sources */,
+				04A540F922A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m in Sources */,
+				D7D8355A21B112ED000FE4DD /* FindViewController.m in Sources */,
+				04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */,
+				04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */,
+				D722266021A2578F00278111 /* UITextView+Placeholder.m in Sources */,
+				04A5411822A2D23B001C0DE5 /* TheMarktFuturesInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@
 #import "BaseLoading.h"
 #import <SDCycleScrollView.h>
 #import <YYText.h>
+
 #import "NSObject+rubbish.h"
 #import <PYSearch/PYSearch.h>
 #import "SVProgressHUD.h"
@@ -47,5 +48,10 @@
 #import "NSString+Attribute.h"
 #import "NSString+GLDate.h"
 #import "QICIIndexListViewController.h"
+
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "TheMarktHeader.h"
+
 
 #endif /* PrefixHeader_pch */

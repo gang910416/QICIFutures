@@ -5,11 +5,14 @@
 //  Created by Bingo on 2018/11/30.
 //
 
-#import "QICIHideBarViewController.h"
+#import "TheMarktBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FindViewController : QICIHideBarViewController
+@interface FindViewController : TheMarktBaseViewController
+
+
+
 
 @end
 

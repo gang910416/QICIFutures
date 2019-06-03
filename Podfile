@@ -33,6 +33,9 @@ target 'QICIFutures' do
 pod 'DZNEmptyDataSet'
 
 
+  pod 'DZNEmptyDataSet'
+  pod 'MJExtension'
+  pod 'QCLineView'
 
   
 end
