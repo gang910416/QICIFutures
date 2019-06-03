@@ -21,6 +21,12 @@
 #import "BaseLoading.h"
 #import <SDCycleScrollView.h>
 #import <YYText.h>
+
+
+#import "MineHeader.h"
+#import "YNWHttpRequest.h"
+
+
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "QICIHTTPRequest.h"
 #import "TheMarktHeader.h"
@@ -54,8 +60,5 @@
 #import "QICIIndexListViewController.h"
 
 #import <SVProgressHUD/SVProgressHUD.h>
-
-#import "TheMarktHeader.h"
-
 
 #endif /* PrefixHeader_pch */

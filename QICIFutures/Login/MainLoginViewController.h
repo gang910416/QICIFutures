@@ -1,9 +1,10 @@
 //
 //  MainLoginViewController.h
-//  LiveOfBeiJing
+//  QICIFutures
 //
-//  Created by Bingo on 2018/11/27.
+//  Created by mac on 2019/5/31.
 //
+
 
 #import "QICIHideBarViewController.h"
 

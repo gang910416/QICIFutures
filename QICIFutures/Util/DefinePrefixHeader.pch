@@ -109,10 +109,27 @@
 
 #define HOMEBACKDATA                                @[@"prod_name",@"prod_code",@"last_px",@"px_change",@"px_change_rate",@"open_px",@"high_px",@"low_px",@"preclose_px",@"bid_grp",@"offer_grp",@"week_52_low",@"week_52_high",@"trade_status",@"update_time"]
 
+
+//------------------
+//加载图片
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+#define ACCOUNT @"1868959902"
+#define PASSWORD @"123456"
+
+#define string(str) [NSString stringWithFormat:@"%@",str]
+
+// View 圆角
+#define LXViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
 #define  APPKEY51 @"3f39051e89e1cea0a84da126601763d8"
 #define  DATAURL51  @"http://data.api51.cn/apis/integration/"
 #define HOMENewsList                                 @"http://sjzqbj.csc108.com:9800/api/news20/list"
 
 #define APINewsDetail                               @"http://sjzqbj.csc108.com:9800/api/news20/detail"
+
 
 #endif /* DefinePrefixHeader_pch */

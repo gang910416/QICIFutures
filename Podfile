@@ -26,11 +26,12 @@ target 'QICIFutures' do
   pod 'MBProgressHUD'
   pod 'LEETheme'
 
-  pod 'TZImagePickerController'
-   pod 'QWAlertView'
-  pod 'IQKeyboardManager'
+pod 'TZImagePickerController'
+pod 'QWAlertView'
 
-  pod 'DZNEmptyDataSet'
+pod 'DZNEmptyDataSet'
+pod 'TYPagerController'
+
   pod 'MJExtension'
   pod 'QCLineView'
 

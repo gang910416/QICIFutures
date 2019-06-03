@@ -312,6 +312,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeDomestic;
             tmafVC.title = @"国内期货";
+
             tmafVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tmafVC animated:YES];
             }
@@ -319,7 +320,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             
         case 1:
         {
-            
+
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";

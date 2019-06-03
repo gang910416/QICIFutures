@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "111A9704B58339151FA6516F56F57561"
+               BlueprintIdentifier = "F5D3F49EC7EB8C93A377E067E016A624"
                BuildableName = "QCLineView.framework"
                BlueprintName = "QCLineView"
                ReferencedContainer = "container:Pods.xcodeproj">

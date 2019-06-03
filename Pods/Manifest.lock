@@ -19,7 +19,7 @@ PODS:
     - UICKeyChainStore (~> 2.1.0)
   - IQKeyboardManager (6.3.0)
   - JhtMarquee (1.0.5)
-  - LEETheme (1.1.7)
+  - LEETheme (1.1.8)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.17)
@@ -32,11 +32,12 @@ PODS:
   - RTRootNavigationController/Core (0.7.1)
   - SDCycleScrollView (1.80):
     - SDWebImage (>= 5.0.0)
-  - SDWebImage (5.0.2):
-    - SDWebImage/Core (= 5.0.2)
-  - SDWebImage/Core (5.0.2)
+  - SDWebImage (5.0.4):
+    - SDWebImage/Core (= 5.0.4)
+  - SDWebImage/Core (5.0.4)
   - SVProgressHUD (2.2.5)
-  - TZImagePickerController (3.2.0)
+  - TYPagerController (2.1.2)
+  - TZImagePickerController (3.2.1)
   - UICKeyChainStore (2.1.2)
   - WebViewJavascriptBridge (6.0.3)
   - YYModel (1.0.4)
@@ -60,6 +61,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
+  - TYPagerController
   - TZImagePickerController
   - WebViewJavascriptBridge
   - YYModel
@@ -84,6 +86,7 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - SVProgressHUD
+    - TYPagerController
     - TZImagePickerController
     - UICKeyChainStore
     - WebViewJavascriptBridge
@@ -96,7 +99,7 @@ SPEC CHECKSUMS:
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   JhtMarquee: 6f1118943062553c35aefea1115bdbeb0c4d7fd7
-  LEETheme: e5dc623fe58ee9f2b973e9a7445267e3e972deb4
+  LEETheme: 24c6ad2cca4cc415d9defc94a3fb862ee29bcc9c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
@@ -106,14 +109,15 @@ SPEC CHECKSUMS:
   QWAlertView: bf402ef3e7b46d828406f481be07bb12532ab545
   RTRootNavigationController: afa6913402be26f8326f7f37fc1550aa67baddcc
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
-  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SDWebImage: c739016e4bdf0a4a1f9a04b5e0385395ad63a282
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1714ee918028b7b5edc8f32ab6f434195dfe0a12
+PODFILE CHECKSUM: 300a80417fa32040382e88905f7d7b7ad0483c0a
 
 COCOAPODS: 1.6.1
