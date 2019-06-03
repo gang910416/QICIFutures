@@ -6,9 +6,9 @@
 //  Copyright © 2019 ASD. All rights reserved.
 //
 
-#import "QICINewsLogic.h"
-#import "QICINewsDetailModel.h"
-@implementation QICINewsLogic
+#import "ASDNewsLogic.h"
+#import "ASDNewsDetailModel.h"
+@implementation ASDNewsLogic
 /**
  获得新闻详情的方法
  
@@ -16,24 +16,25 @@
  @param suc 成功回调
  @param faild 失败回调
  */
-+ (void)getNewsDetailWithNewsId:(NSString *)newsId blockSuccess:(void (^)(QICINewsDetailModel * detailModel))suc faild:(void (^)(NSError *error))faild {
++ (void)getNewsDetailWithNewsId:(NSString *)newsId blockSuccess:(void (^)(ASDNewsDetailModel * detailModel))suc faild:(void (^)(NSError *error))faild {
     
     NSDictionary *params = @{@"id":isStrEmpty(newsId) ? @"15577989028315098" : newsId,@"type":@"L295"};
     
-    [[QICIHTTPRequest sharedInstance]oneGet:APINewsDetail path:@"" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        QICINewsDetailModel *model = nil;
+    [[QICIHTTPRequest sharedInstance] oneGet:APINewsDetail path:@"" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        ASDNewsDetailModel *model = nil;
         
         if (responseObject) {
             
-            model = [QICINewsDetailModel createModelWithReq:responseObject];
-            
+            model = [ASDNewsDetailModel createModelWithReq:responseObject];
+
         }
         !suc ? : suc(model);
     } faile:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
         !faild ? : faild(error);
+        
     }];
-  
-    
 }
 
 

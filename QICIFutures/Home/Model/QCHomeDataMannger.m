@@ -22,11 +22,11 @@
     
     NSDictionary *params = @{@"token":APPKEY51,@"prod_code":prod_code,@"fields":fields ? : @""};
     
-    [[HttpRequest sharedInstance] oneGet:DATAURL51 path:path parameters:params success:^(id responsData) {
+    [[QICIHTTPRequest sharedInstance] oneGet:DATAURL51 path:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *list = @[];
         
-        if (responsData) {
-            NSDictionary *data = [responsData objectForKey:@"data"];
+        if (responseObject) {
+            NSDictionary *data = [responseObject objectForKey:@"data"];
             if (data && data.count > 0 && [data isKindOfClass:[NSDictionary class]]) {
                 NSDictionary *snapShot = [data objectForKey:@"snapshot"];
                 
@@ -35,9 +35,10 @@
         }
         
         !suc ? : suc(list);
-    } faile:^(NSError *error) {
-            !faild ? : faild(error);
-        }];
+    } faile:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+          !faild ? : faild(error);
+    }];
+    
 }
 /**
  请求首页期货排行列表
@@ -58,10 +59,10 @@
     [params setObject:filed forKey:@"fields"];
     [params setObject:APPKEY51 forKey:@"token"];
     
-    [[HttpRequest sharedInstance] oneGet:DATAURL51 path:@"rank" parameters:params success:^(id responsData) {
+    [[QICIHTTPRequest sharedInstance] oneGet:DATAURL51 path:@"rank" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *dataArray = [NSArray array];
-        if (responsData) {
-            NSDictionary *data = [responsData objectForKey:@"data"];
+        if (responseObject) {
+            NSDictionary *data = [responseObject objectForKey:@"data"];
             if (data  && [data isKindOfClass:[NSDictionary class]] && data.count > 0 ) {
                 NSArray *candle = [data objectForKey:@"candle"];
                 
@@ -69,9 +70,10 @@
             }
         }
         !blockSuccess ? :blockSuccess(dataArray);
-    } faile:^(NSError *error) {
+    } faile:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
+     
     
 }
 
@@ -84,21 +86,23 @@
     }
     
     NSDictionary *param = @{@"req_count":countString,@"req_sinceId":isStrEmpty(sinceId) ? @"0" : sinceId,@"req_funType":@"L295"};
-    [[HttpRequest sharedInstance]oneGet:HOMENewsList path:@"" parameters:param success:^(id responsData) {
+    
+    
+    [[QICIHTTPRequest sharedInstance]oneGet:HOMENewsList path:@"" parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray *list = @[];
         
-        if (responsData) {
-            NSDictionary *newsDict = [responsData objectForKey:@"news"];
+        if (responseObject) {
+            NSDictionary *newsDict = [responseObject objectForKey:@"news"];
             if (newsDict && [newsDict isKindOfClass:[NSArray class]] && newsDict.count > 0 ) {
                 //d字典转模型
                 list = [NSArray yy_modelArrayWithClass:[QCNewsListModel class] json:newsDict];
             }
         }
-        
-        !sucess ? : sucess(list);
-    } faile:^(NSError *error) {
-        !faild ? : faild(error);
+         !sucess ? : sucess(list);
+    } faile:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+           !faild ? : faild(error);
     }];
+    
 }
 
 + (NSArray <QICIMarkeModel *>*)processHomeMarketListWithArray:(NSArray *)candle market:(NSString *)marketString {

@@ -124,6 +124,7 @@
 		04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412822A3FB15001C0DE5 /* TheMarktRequestNewsModel.m */; };
 		04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412B22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m */; };
 		04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5412F22A3FF03001C0DE5 /* TheMarktNewsModel.m */; };
+
 		04B5397522A4C70A00578EE4 /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5397322A4C70A00578EE4 /* CollectionTableViewCell.m */; };
 		04B5397622A4C70A00578EE4 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B5397422A4C70A00578EE4 /* CollectionTableViewCell.xib */; };
 		04B5397E22A4D17B00578EE4 /* NoDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5397C22A4D17B00578EE4 /* NoDataTableViewCell.m */; };
@@ -132,6 +133,17 @@
 		04EABA5022A115B800573FB0 /* MeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */; };
 		04EABA5422A115E700573FB0 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EABA5222A115E700573FB0 /* MeViewController.m */; };
 		04EABA5522A115E700573FB0 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EABA5322A115E700573FB0 /* MeViewController.xib */; };
+
+		04CA6BDE22A4D19A00412FFD /* QICIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */; };
+		04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */; };
+		04CA6BE422A4D1FA00412FFD /* QICIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */; };
+		04CA6BE722A4FB0A00412FFD /* ASDNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */; };
+		04CA6BEA22A4FB3000412FFD /* ASDNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */; };
+		04CA6BEF22A4FB7400412FFD /* ASDNewsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */; };
+		04CA6BF022A4FB7400412FFD /* ASDNewsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BED22A4FB7400412FFD /* ASDNewsListModel.m */; };
+		04CA6BF322A4FB8900412FFD /* ASDNewsLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */; };
+		04CA6BF622A4FBB300412FFD /* ASDNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */; };
+
 		253E183312C5FE98CA7799AE /* Pods_QICIFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */; };
 		D72224EA21A253EB00278111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72224E921A253EB00278111 /* AppDelegate.m */; };
 		D72224F021A253EB00278111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72224EE21A253EB00278111 /* Main.storyboard */; };
@@ -416,12 +428,33 @@
 		04B5397C22A4D17B00578EE4 /* NoDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataTableViewCell.m; sourceTree = "<group>"; };
 		04B5397D22A4D17B00578EE4 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
 		04CA6BD822A4CD5500412FFD /* SaveAndUseFuturesDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndUseFuturesDataModel.h; sourceTree = "<group>"; };
+
 		04EABA4C22A115B800573FB0 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		04EABA4D22A115B800573FB0 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		04EABA4E22A115B800573FB0 /* MeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTableViewCell.xib; sourceTree = "<group>"; };
 		04EABA5122A115E700573FB0 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		04EABA5222A115E700573FB0 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		04EABA5322A115E700573FB0 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+
+		04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIHTTPRequest.h; sourceTree = "<group>"; };
+		04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIHTTPRequest.m; sourceTree = "<group>"; };
+		04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIRequestSerializer.h; sourceTree = "<group>"; };
+		04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIRequestSerializer.m; sourceTree = "<group>"; };
+		04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIResponseSerializer.h; sourceTree = "<group>"; };
+		04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIResponseSerializer.m; sourceTree = "<group>"; };
+		04CA6BE522A4FB0A00412FFD /* ASDNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListViewController.h; sourceTree = "<group>"; };
+		04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListViewController.m; sourceTree = "<group>"; };
+		04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsViewController.m; sourceTree = "<group>"; };
+		04CA6BE922A4FB3000412FFD /* ASDNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsViewController.h; sourceTree = "<group>"; };
+		04CA6BEB22A4FB7400412FFD /* ASDNewsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListModel.h; sourceTree = "<group>"; };
+		04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsDetailModel.m; sourceTree = "<group>"; };
+		04CA6BED22A4FB7400412FFD /* ASDNewsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListModel.m; sourceTree = "<group>"; };
+		04CA6BEE22A4FB7400412FFD /* ASDNewsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsDetailModel.h; sourceTree = "<group>"; };
+		04CA6BF122A4FB8900412FFD /* ASDNewsLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsLogic.h; sourceTree = "<group>"; };
+		04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsLogic.m; sourceTree = "<group>"; };
+		04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListCell.m; sourceTree = "<group>"; };
+		04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListCell.h; sourceTree = "<group>"; };
+
 		0F38DD4694CE79059BFA447C /* libPods-QCLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E57902E2FC941C6F454CE3 /* Pods_QICIFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QICIFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89109B94D3B8E64738812B44 /* libPods-ENGLISH.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ENGLISH.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -624,6 +657,8 @@
 		0479B29E22A11D01003BBE34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */,
+				04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */,
 				0479B3B822A48B51003BBE34 /* QICIMarketDetailView.h */,
 				0479B3B722A48B51003BBE34 /* QICIMarketDetailView.m */,
 				0479B2F622A3CDB4003BBE34 /* QICIMarketListSectionHeaderView.h */,
@@ -649,6 +684,10 @@
 		0479B29F22A11D01003BBE34 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BE922A4FB3000412FFD /* ASDNewsViewController.h */,
+				04CA6BE822A4FB3000412FFD /* ASDNewsViewController.m */,
+				04CA6BE522A4FB0A00412FFD /* ASDNewsListViewController.h */,
+				04CA6BE622A4FB0A00412FFD /* ASDNewsListViewController.m */,
 				0479B3A622A48595003BBE34 /* QICIIndexListViewController.h */,
 				0479B3A522A48595003BBE34 /* QICIIndexListViewController.m */,
 				0479B2BD22A1F3B2003BBE34 /* QICHomeViewController.h */,
@@ -662,6 +701,12 @@
 		0479B2A022A11D01003BBE34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BF122A4FB8900412FFD /* ASDNewsLogic.h */,
+				04CA6BF222A4FB8900412FFD /* ASDNewsLogic.m */,
+				04CA6BEE22A4FB7400412FFD /* ASDNewsDetailModel.h */,
+				04CA6BEC22A4FB7400412FFD /* ASDNewsDetailModel.m */,
+				04CA6BEB22A4FB7400412FFD /* ASDNewsListModel.h */,
+				04CA6BED22A4FB7400412FFD /* ASDNewsListModel.m */,
 				0479B3A922A48785003BBE34 /* QICIMarketListProtocol.h */,
 				0479B30222A3D52F003BBE34 /* QICINewsLogic.h */,
 				0479B30322A3D52F003BBE34 /* QICINewsLogic.m */,
@@ -1308,6 +1353,12 @@
 		D7C218C721A41A6A009458C2 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */,
+				04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */,
+				04CA6BDF22A4D1E400412FFD /* QICIRequestSerializer.h */,
+				04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */,
+				04CA6BDC22A4D19900412FFD /* QICIHTTPRequest.h */,
+				04CA6BDD22A4D19900412FFD /* QICIHTTPRequest.m */,
 				D7C218C821A41A6A009458C2 /* HttpRequest.m */,
 				D7C218C921A41A6A009458C2 /* HttpRequest.h */,
 			);
@@ -1497,6 +1548,8 @@
 				0479B2EC22A3C153003BBE34 /* QCHorizontalListView.m in Sources */,
 				0479B39722A4822D003BBE34 /* KLineBGDrawLogic.m in Sources */,
 				04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */,
+				04CA6BEF22A4FB7400412FFD /* ASDNewsDetailModel.m in Sources */,
+				04CA6BF322A4FB8900412FFD /* ASDNewsLogic.m in Sources */,
 				04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */,
 				04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */,
 				04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */,
@@ -1504,6 +1557,7 @@
 				D722265821A2578F00278111 /* UIView+Cornor.m in Sources */,
 				04A5412C22A3FB34001C0DE5 /* TheMarktFuturesNewsTableViewCell.m in Sources */,
 				04A540EB22A28645001C0DE5 /* TheMarktTools.m in Sources */,
+				04CA6BE422A4D1FA00412FFD /* QICIResponseSerializer.m in Sources */,
 				04A5411F22A2DAD9001C0DE5 /* Reachability.m in Sources */,
 				04A5410922A2CC7D001C0DE5 /* TheMarktAllDomesticView.m in Sources */,
 				04A540E522A27FBE001C0DE5 /* TheMarktScrollNewsTableViewCell.m in Sources */,
@@ -1531,6 +1585,10 @@
 				04A540E822A280C1001C0DE5 /* TheMarktFastNewsScrollView.m in Sources */,
 				D798701D21B0EBB400AA0BA3 /* BaseLoading.m in Sources */,
 				0479B38D22A4822D003BBE34 /* KLineVolDrawLogic.m in Sources */,
+
+				04CA6BE722A4FB0A00412FFD /* ASDNewsListViewController.m in Sources */,
+				D722267221A293F800278111 /* MeViewController.m in Sources */,
+
 				0479B2F222A3C1D0003BBE34 /* QICITitleMoreToolView.m in Sources */,
 				0479B38622A4822D003BBE34 /* KLineIndicatorLogic.m in Sources */,
 				0479B39322A4822D003BBE34 /* KLineMACDDrawLogic.m in Sources */,
@@ -1542,6 +1600,7 @@
 				0479B39D22A4822D003BBE34 /* ListMenuView.m in Sources */,
 				0479B37E22A4822D003BBE34 /* RectSelectedView.m in Sources */,
 				0479B2A622A121B1003BBE34 /* NSObject+rubbish.m in Sources */,
+				04CA6BF622A4FBB300412FFD /* ASDNewsListCell.m in Sources */,
 				D72224F821A253EC00278111 /* main.m in Sources */,
 				0479B3C222A48D3B003BBE34 /* NSString+GLDate.m in Sources */,
 				0479B2AF22A1354E003BBE34 /* MArketTableViewCell.m in Sources */,
@@ -1572,6 +1631,7 @@
 				D722266421A2578F00278111 /* NSString+UMExtensions.m in Sources */,
 				0479B3A022A4822D003BBE34 /* TabControlView.m in Sources */,
 				0479B3A322A483CE003BBE34 /* UIFont+ScaleSize.m in Sources */,
+				04CA6BEA22A4FB3000412FFD /* ASDNewsViewController.m in Sources */,
 				04A540DF22A26BCC001C0DE5 /* TheMarktRequestViewModel.m in Sources */,
 				04A5412422A2DC3B001C0DE5 /* SearchIResultDataTableViewCell.m in Sources */,
 				D722265721A2578F00278111 /* NSDate+UMExtensions.m in Sources */,
@@ -1583,6 +1643,7 @@
 				0479B2F822A3CDB5003BBE34 /* QICIMarketListSectionHeaderView.m in Sources */,
 				0479B2C222A1F49C003BBE34 /* QCHomeDataMannger.m in Sources */,
 				0479B39E22A4822D003BBE34 /* VerticalView.m in Sources */,
+				04CA6BF022A4FB7400412FFD /* ASDNewsListModel.m in Sources */,
 				0479B38422A4822D003BBE34 /* DataCenter.m in Sources */,
 				0479B38A22A4822D003BBE34 /* NSValue+GLExtremeValue.m in Sources */,
 				0479B39022A4822D003BBE34 /* KLineMADrawLogic.m in Sources */,
@@ -1613,6 +1674,7 @@
 				04A5410C22A2CC9A001C0DE5 /* TheMarktAllForeginView.m in Sources */,
 				D72224EA21A253EB00278111 /* AppDelegate.m in Sources */,
 				0479B2EF22A3C1A4003BBE34 /* QICIMarketCollectionViewCell.m in Sources */,
+				04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */,
 				D722265A21A2578F00278111 /* NSMutableArray+Extension.m in Sources */,
 				0479B39A22A4822D003BBE34 /* SimpleKLineVolView.m in Sources */,
 				0479B30122A3D505003BBE34 /* QICINewsDetailModel.m in Sources */,
@@ -1638,6 +1700,7 @@
 				04A5411522A2D099001C0DE5 /* AllFuturesListHeader.m in Sources */,
 				04A540F922A2BD7F001C0DE5 /* TheMarktBseNavigationViewController.m in Sources */,
 				D7D8355A21B112ED000FE4DD /* FindViewController.m in Sources */,
+				04CA6BDE22A4D19A00412FFD /* QICIHTTPRequest.m in Sources */,
 				04A5413022A3FF03001C0DE5 /* TheMarktNewsModel.m in Sources */,
 				04A5412922A3FB15001C0DE5 /* TheMarktRequestNewsModel.m in Sources */,
 				D722266021A2578F00278111 /* UITextView+Placeholder.m in Sources */,

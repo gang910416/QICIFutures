@@ -198,4 +198,6 @@
     }
     return self.isGesturesBack;
 }
+
+
 @end
