@@ -33,6 +33,7 @@
             _title.textColor = [UIColor whiteColor];
             _title.font = [UIFont systemFontOfSize:18];
             _title.text = @"我的";
+            _title.hidden = YES;
         }
         if (!_back) {
             _back = [[UIView alloc] init];
@@ -65,7 +66,7 @@
             [self.back addSubview:_name];
             [_name mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self);
-                make.top.mas_equalTo(self.header.mas_bottom).mas_offset(15);
+                make.top.mas_equalTo(self.header.mas_bottom).mas_offset(8);
             }];
             
             if ([[UserModel getInstance]getUserIsLogin]) {
@@ -83,7 +84,8 @@
             [self.back addSubview:_tip];
             [_tip mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self);
-                make.top.mas_equalTo(self.name.mas_bottom).mas_offset(10);
+                make.top.mas_equalTo(self.name.mas_bottom).mas_offset(8);
+//                make.bottom.mas_equalTo(self.mas_bottom).mas_equalTo(-5);
             }];
             _tip.textColor = [UIColor textColorWithType:1];
             _tip.font = [UIFont systemFontOfSize:12];

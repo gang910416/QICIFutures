@@ -103,6 +103,7 @@
         if (a != i) {
             UIButton *tempBtn = (UIButton *)[self viewWithTag:234+a];
             [tempBtn setBackgroundColor:[UIColor whiteColor]];
+            tempBtn.selected = NO;
         }
     }
 }

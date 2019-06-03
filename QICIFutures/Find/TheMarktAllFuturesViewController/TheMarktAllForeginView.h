@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) void(^selectRowBlock)(NSDictionary *dic);
 
+@property (nonatomic,copy) void(^selectBtnBlock)(NSString *title);
+
 @end
 
 NS_ASSUME_NONNULL_END
