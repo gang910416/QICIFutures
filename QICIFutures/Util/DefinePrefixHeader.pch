@@ -114,7 +114,7 @@
 //加载图片
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
-#define ACCOUNT @"1868959902"
+#define ACCOUNT @"18689599021"
 #define PASSWORD @"123456"
 
 #define string(str) [NSString stringWithFormat:@"%@",str]
