@@ -1,0 +1,6 @@
+framework module QCLineView {
+  umbrella header "QCLineView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NewsDetailViewController : BaseHiddenBarViewController
+@interface NewsDetailViewController : QICIHideBarViewController
 @property (nonatomic,strong) NSString *newsid;
 @property (nonatomic,strong) NSArray *dataArr;
 @end

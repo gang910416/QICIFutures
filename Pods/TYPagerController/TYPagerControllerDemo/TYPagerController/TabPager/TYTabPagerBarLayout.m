@@ -41,7 +41,7 @@
     _normalTextFont = [UIFont systemFontOfSize:15];
     _selectedTextFont = [UIFont systemFontOfSize:18];
     _normalTextColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
-    _selectedTextColor = [UIColor whiteColor];
+    _selectedTextColor = [UIColor redColor];
     _textColorProgressEnable = YES;
     //_adjustContentCellsCenter = YES;
 }

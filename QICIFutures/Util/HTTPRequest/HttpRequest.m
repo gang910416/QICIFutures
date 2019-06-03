@@ -13,9 +13,10 @@
 }
 -(instancetype)init {
     if (self = [super init]) {
-      _manager = [[AFHTTPSessionManager alloc]init];
-      _manager.requestSerializer.timeoutInterval = 10.f;
-      _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
+        _manager = [[AFHTTPSessionManager alloc]init];
+        _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        _manager.requestSerializer.timeoutInterval = 10.f;
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",@"application/javascript", nil];
     }
     return self;
 }

@@ -5,11 +5,11 @@
 //  Created by mac on 2019/6/2.
 //
 
-#import <UIKit/UIKit.h>
+#import "QICIHideBarViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedBackViewController : BaseHiddenBarViewController
+@interface FeedBackViewController : QICIHideBarViewController
 
 @end
 

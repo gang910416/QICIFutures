@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MeViewController : BaseHiddenBarViewController
+@interface MeViewController : QICIHideBarViewController
 
 @end
 

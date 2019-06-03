@@ -82,7 +82,7 @@
 
 - (void)addUnderLineView {
      UIView *progressView = [[UIView alloc]init];
-    progressView.backgroundColor = [UIColor whiteColor];
+    progressView.backgroundColor = [UIColor redColor];
     [_collectionView addSubview:progressView];
     _progressView = progressView;
 }

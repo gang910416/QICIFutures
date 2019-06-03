@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LocalViewController : BaseHiddenBarViewController
+@interface LocalViewController : QICIHideBarViewController
 @property (nonatomic,strong) NSString *titleStr;
 @property (nonatomic,strong) NSString *localStr;
 

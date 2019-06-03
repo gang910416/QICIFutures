@@ -5,11 +5,12 @@
 //  Created by mac on 2019/5/31.
 //
 
-#import <UIKit/UIKit.h>
+
+#import "QICIHideBarViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainLoginViewController : BaseHiddenBarViewController
+@interface MainLoginViewController : QICIHideBarViewController
 
 @end
 
