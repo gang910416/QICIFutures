@@ -9,7 +9,7 @@
 
 #import "ASDNewsViewController.h"
 #import "ASDNewsDetailModel.h"
-#import "ASDNewsLogic.h"
+#import "QCNewsLogic.h"
 @interface ASDNewsViewController ()
 
 /** newsId */
@@ -55,7 +55,7 @@
     
     [SVProgressHUD show];
     weakSelf(self);
-    [ASDNewsLogic getNewsDetailWithNewsId:self.newsId blockSuccess:^(ASDNewsDetailModel * _Nullable detailModel) {
+    [QCNewsLogic getNewsDetailWithNewsId:self.newsId blockSuccess:^(ASDNewsDetailModel * _Nullable detailModel) {
         [SVProgressHUD dismiss];
         [weakSelf p_loadDataWithModel:detailModel];
         

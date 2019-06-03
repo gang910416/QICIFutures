@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QICIFutures/Home/Controller/QCNewsViewController.m"
-            timestampString = "581231111.131456"
+            timestampString = "581244474.414449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -35,46 +35,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "QICIFutures/Home/Model/QICINewsLogic.m"
-            timestampString = "581239961.2820669"
+            filePath = "../ASDFutureProject 3/ASDFutureProject/Vendor/Custom/KLine/CustomClass/ReticleLine/HorizontalView.m"
+            timestampString = "581246671.670916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "+getNewsDetailWithNewsId:blockSuccess:faild:"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-initWithFrame:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[QICINewsLogic getNewsDetailWithNewsId:blockSuccess:faild:]"
-                  moduleName = "QICIFutures"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/QICIFutures/QICIFutures/Home/Model/QICINewsLogic.m"
-                  timestampString = "581239961.382514"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "669">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__60+[QICINewsLogic getNewsDetailWithNewsId:blockSuccess:faild:]_block_invoke"
-                  moduleName = "QICIFutures"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/QICIFutures/QICIFutures/Home/Model/QICINewsLogic.m"
-                  timestampString = "581239961.387917"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "69">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

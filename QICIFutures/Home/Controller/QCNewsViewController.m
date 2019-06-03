@@ -8,14 +8,14 @@
 //
 
 #import "QCNewsViewController.h"
-#import "QICINewsDetailModel.h"
+#import "QCNewsDetailModel.h"
 #import "QICINewsLogic.h"
 @interface QCNewsViewController ()
 
 /** newsId */
 @property (strong, nonatomic) NSString *newsId;
 
-@property (strong, nonatomic) QICINewsDetailModel *newsDetailModel;
+@property (strong, nonatomic) QCNewsDetailModel *newsDetailModel;
 
 @end
 
@@ -55,7 +55,7 @@
     
     [SVProgressHUD show];
     weakSelf(self);
-    [QICINewsLogic getNewsDetailWithNewsId:self.newsId blockSuccess:^(QICINewsDetailModel * _Nullable detailModel) {
+    [QICINewsLogic getNewsDetailWithNewsId:self.newsId blockSuccess:^(QCNewsDetailModel * _Nullable detailModel) {
         [SVProgressHUD dismiss];
         [weakSelf p_loadDataWithModel:detailModel];
         
@@ -64,7 +64,7 @@
     }];
 }
 
-- (void)p_loadDataWithModel:(QICINewsDetailModel *)detailModel {
+- (void)p_loadDataWithModel:(QCNewsDetailModel *)detailModel {
     if(detailModel) {
         self.newsDetailModel = detailModel;
         [self updateHtmlString:self.newsDetailModel.body];

@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class ASDNewsListModel;
+@class QCNewsListModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ASDNewsListCell : UITableViewCell
 
-- (void)updateDataWithModel:(ASDNewsListModel *)model;
+- (void)updateDataWithModel:(QCNewsListModel *)model;
 
 @end
 

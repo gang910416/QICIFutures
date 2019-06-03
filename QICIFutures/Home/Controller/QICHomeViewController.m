@@ -9,10 +9,12 @@
 #import "QCHomeHeaderView.h"
 #import "QICIMarketListSectionHeaderView.h"
 #import "QCNewsViewController.h"
-#import "ASDNewsListViewController.h"
-#import "ASDNewsListModel.h"
-#import "ASDNewsViewController.h"
+#import "QCNewsListViewController.h"
+#import "QCNewsListModel.h"
+#import "QCNewsViewController.h"
 #import "ASDNewsListCell.h"
+#import "QCSearchListViewController.h"
+#import "QCMarketLogic.h"
 @interface QICHomeViewController ()<
 UIScrollViewDelegate,
 UITableViewDelegate,
@@ -41,7 +43,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
     [super viewDidLoad];
     self.newsId = @"0";
     self.isRefresh= YES;
-    [self  lg_configUi];
+    [self  configUi];
     [self getNewsData];
 }
 
@@ -72,13 +74,13 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 -(void)getNewsData{
     [SVProgressHUD show];
     weakSelf(self);
-    [QCHomeDataMannger getHomeNewsWithSinceId:self.newsId count:20 blockSuccess:^(NSArray<ASDNewsListModel *> * _Nonnull list) {
+    [QCHomeDataMannger getHomeNewsWithSinceId:self.newsId count:20 blockSuccess:^(NSArray<QCNewsListModel *> * _Nonnull list) {
         
         [SVProgressHUD dismiss];
         [weakSelf.tableView.mj_header endRefreshing];
         [weakSelf.tableView.mj_footer endRefreshing];
         self.newsDataSource = [list mutableCopy];
-        [weakSelf p_processDataWithList:list];
+        [weakSelf processDataWithList:list];
         
     } faild:^(NSError * _Nonnull error) {
         
@@ -89,7 +91,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
     }];
 
 }
-- (void)p_processDataWithList:(NSArray *)list {
+- (void)processDataWithList:(NSArray *)list {
     
     if (list && list.count > 0) {
         if (self.isRefresh) {
@@ -107,7 +109,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
     self.isRefresh = NO;
 }
 
--(void)lg_configUi{
+-(void)configUi{
     
      [self.view addSubview:self.searchButton];
      [self.searchButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -133,17 +135,30 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
     
     NSArray *searchHotArray = @[@"AU9999.SGE",@"AGTD.SGE",@"CNA50F.OTC",@"天然气",@"玉米"];
     
-    PYSearchViewController *pysearchVc = [PYSearchViewController searchViewControllerWithHotSearches:searchHotArray searchBarPlaceholder:@"输入完整的期货或代码" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
-         [SVProgressHUD show];
+    PYSearchViewController *searchViewController = [PYSearchViewController searchViewControllerWithHotSearches:searchHotArray searchBarPlaceholder:@"请输入完整的期货或股指代码" didSearchBlock:^(PYSearchViewController *searchViewController, UISearchBar *searchBar, NSString *searchText) {
+        
+        [SVProgressHUD show];
+        
+        [QCMarketLogic searchStockDataWithSymbol:searchText success:^(NSArray<ASDMarketListModel *> * _Nonnull searchList) {
+            
+            if(searchList && searchList.count > 0) {
+                [SVProgressHUD dismiss];
+                QCSearchListViewController *searchVC = [[QCSearchListViewController alloc] initWithSearchList:searchList];
+                [searchViewController.navigationController pushViewController:searchVC animated:YES];
+            }else {
+                [SVProgressHUD showErrorWithStatus:@"找不到您所搜索的期货"];
+            }
+            
+        } faild:^(NSError * _Nonnull error) {
+            [SVProgressHUD showErrorWithStatus:@"找不到您所搜索的期货"];
+        }];
         
     }];
-//    [SVProgressHUD dismiss];
-    pysearchVc.view.backgroundColor = QICIColorMarketDetail;
+    searchViewController.view.backgroundColor = QICIColorMarketDetail;
     // 3. present the searchViewController
-    UINavigationController *searchnav = [[UINavigationController alloc] initWithRootViewController:pysearchVc];
-    searchnav.navigationBar.barTintColor =QICIColorTheme;
-    [self presentViewController:searchnav  animated:NO completion:nil];
-}
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:searchViewController];
+    [self presentViewController:nav  animated:NO completion:nil];
+                                          }
 
 
 #pragma mark - tableiview delegate ---
@@ -159,7 +174,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ASDNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
-    ASDNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
+    QCNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
     [cell updateDataWithModel:model];
     return cell;
 }
@@ -179,11 +194,11 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    ASDNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
+    QCNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
     
     if (model) {
         
-        ASDNewsViewController *detailVC = [[ASDNewsViewController alloc] initWithNewsId:model.newsId];
+        QCNewsViewController *detailVC = [[QCNewsViewController alloc] initWithNewsId:model.newsId];
         detailVC.title = model.title;
         detailVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:detailVC animated:YES];
@@ -324,7 +339,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             break;
         case 3:
         {
-            ASDNewsListViewController *newsListVC = [[ASDNewsListViewController alloc] initWithNeedBackBtn:YES];
+            QCNewsListViewController *newsListVC = [[QCNewsListViewController alloc] initWithNeedBackBtn:YES];
             newsListVC.hidesBottomBarWhenPushed = YES;
             newsListVC.title = @"资讯";
             [self.navigationController pushViewController:newsListVC animated:YES];

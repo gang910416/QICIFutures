@@ -7,12 +7,12 @@
 //
 
 #import "ASDNewsListCell.h"
-#import "ASDNewsListModel.h"
+#import "QCNewsListModel.h"
 
 @interface ASDNewsListCell ()
 
 /** model */
-@property (strong, nonatomic) ASDNewsListModel *newsModel;
+@property (strong, nonatomic) QCNewsListModel *newsModel;
 
 /** image */
 @property (strong, nonatomic) UIImageView *picView;
@@ -92,7 +92,7 @@
 }
 
 
-- (void)updateDataWithModel:(ASDNewsListModel *)model {
+- (void)updateDataWithModel:(QCNewsListModel *)model {
     if(model) {
         self.newsModel = model;
         
