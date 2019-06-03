@@ -4,15 +4,15 @@
 
 #import "DefinePrefixHeader.pch"
 #import "UIView+Frame.h"
-#import "BaseHiddenBarViewController.h"
+#import "QICIHideBarViewController.h"
 #import <Masonry.h>
+#import <MJRefresh/MJRefresh.h>
 #import "HttpRequest.h"
 #import "UMTimeStamp.h"
 #import "UITableViewCell+UMReusable.h"
 #import <UIImageView+WebCache.h>
 #import "UILabel+Copy.h"
 #import "UILabel+label.h"
-#import "BaseShowBarViewController.h"
 #import <IQKeyboardManager.h>
 #import "NSString+UMExtensions.h"
 #import "NSMutableAttributedString+Extension.h"
@@ -21,5 +21,31 @@
 #import "BaseLoading.h"
 #import <SDCycleScrollView.h>
 #import <YYText.h>
+#import "NSObject+rubbish.h"
+#import <PYSearch/PYSearch.h>
+#import "SVProgressHUD.h"
+#import "GLRefreshHeader.h"
+#import "NSObject+YYModel.h"
+#import "MArketTableViewCell.h"
+#import "NSString+NumberFormatter.h"
+#import "MArketTableViewCell.h"
+#import "QICIMarkeModel.h"
+#import "QCHomeDataMannger.h"
+#import "UIView+CenterLoading.h"
+#import "QCHorizontalListView.h"
+#import <SDCycleScrollView/SDCycleScrollView.h>
+#import <JhtMarquee/JhtVerticalMarquee.h>
+#import "QCHomeDataMannger.h"
+#import "QCNewsListModel.h"
+#import "QCNewsDetailModel.h"
+#import "UIView+Frame.h"
+#import "DataCenter.h"
+#import "ASDKLineView.h"
+#import "UIFont+ScaleSize.h"
+#import "NSObject+DrawText.h"
+#import "QICIPublicEnum.h"
+#import "NSString+Attribute.h"
+#import "NSString+GLDate.h"
+#import "QICIIndexListViewController.h"
 
 #endif /* PrefixHeader_pch */

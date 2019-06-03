@@ -21,14 +21,14 @@ target 'QICIFutures' do
   pod 'PYSearch'
   pod 'WebViewJavascriptBridge'
   pod 'RTRootNavigationController'
+  pod 'PYSearch'
+  pod 'YYText'
+  pod 'MBProgressHUD'
+  pod 'LEETheme'
 
-pod 'YYText'
-pod 'MBProgressHUD'
-pod 'LEETheme'
-
-pod 'TZImagePickerController'
-pod 'QWAlertView'
-pod 'IQKeyboardManager'
+  pod 'TZImagePickerController'
+   pod 'QWAlertView'
+  pod 'IQKeyboardManager'
 
 pod 'DZNEmptyDataSet'
 

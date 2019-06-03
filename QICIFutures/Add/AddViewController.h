@@ -5,12 +5,12 @@
 //  Created by liuyongfei on 2018/11/19.
 //
 
-#import "BaseHiddenBarViewController.h"
+#import "QICIHideBarViewController.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AddViewController : BaseHiddenBarViewController
+@interface AddViewController : QICIHideBarViewController
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "UIMainConstructor.h"
-#import "HomeViewController.h"
+#import "QICHomeViewController.h"
 #import "FindViewController.h"
 #import "CircleViewController.h"
 #import "AddViewController.h"
@@ -43,18 +43,18 @@ static UIMainConstructor *constructor;
     {
         if (!imageNames) {
             imageNames = @[@"tabbar_home_nor",
-                           @"tabbar_fine_nor",
+                           @"tabbar_market_nor",
                           
-                           @"tabbar_circle_nor",
+                           @"tabbar_fine_nor",
                            @"tabbar_me_nor"
                            ];
         }
         
         if (!selectedImageNames) {
             selectedImageNames = @[@"tabbar_home_sel",
-                                   @"tabbar_fine_sel",
+                                   @"tabbar_market_sel",
                                   
-                                   @"tabbar_circle_sel",
+                                   @"tabbar_fine_sel",
                                    @"tabbar_me_sel"
                                    ];
         }
@@ -80,7 +80,7 @@ static UIMainConstructor *constructor;
 - (void)setupViewControllers
 {
     // 主页
-    HomeViewController *homeVc = [[HomeViewController alloc] init];
+    QICHomeViewController *homeVc = [[QICHomeViewController alloc] init];
 
     homeVc.title = @"主页";
     homeVc.hidesBottomBarWhenPushed = NO;
@@ -88,7 +88,7 @@ static UIMainConstructor *constructor;
     
     //发现
     FindViewController *findVc = [[FindViewController alloc] init];
-    findVc.title = @"发现";
+    findVc.title = @"行情";
     findVc.hidesBottomBarWhenPushed =NO;
     UINavigationController *findNC = [[UINavigationController alloc] initWithRootViewController:findVc];
     
@@ -96,7 +96,7 @@ static UIMainConstructor *constructor;
     
     //社区
     CircleViewController *CircleVc = [[CircleViewController alloc] init];
-    CircleVc.title = @"课程";
+    CircleVc.title = @"资讯";
     CircleVc.hidesBottomBarWhenPushed =NO;
     UINavigationController *circleNC = [[UINavigationController alloc] initWithRootViewController:CircleVc];
     
