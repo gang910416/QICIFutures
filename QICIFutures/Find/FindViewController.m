@@ -84,6 +84,7 @@
     
     if ([[SaveAndUseFuturesDataModel getAllDomesticFuturesInfo] isEqualToArray:@[]]) {
         [SVProgressHUD show];
+        [SVProgressHUD dismissWithDelay:3];
         [self.requestViewModel requestAllFuturesNameInfoSuccess:^{
             [SVProgressHUD dismiss];
         } failture:^(NSString * _Nonnull error) {
