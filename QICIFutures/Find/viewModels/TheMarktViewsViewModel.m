@@ -98,6 +98,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath viewController:(UIViewController *)vc{
     
     if (indexPath.section == 3) {
+        
         TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
         
         if (indexPath.row == 0) {

@@ -19,22 +19,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "QICIFutures/Find/viewModels/TheMarktViewsViewModel.m"
-            timestampString = "581227569.712391"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:viewController:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "QICIFutures/Home/Controller/QCNewsViewController.m"
             timestampString = "581231111.131456"
             startingColumnNumber = "9223372036854775807"
@@ -52,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QICIFutures/Home/Model/QICINewsLogic.m"
-            timestampString = "581234483.357497"
+            timestampString = "581237094.1007299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -68,7 +52,7 @@
                   moduleName = "QICIFutures"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mac/Desktop/QICIFutures/QICIFutures/Home/Model/QICINewsLogic.m"
-                  timestampString = "581234483.509994"
+                  timestampString = "581237094.195135"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -83,7 +67,7 @@
                   moduleName = "QICIFutures"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mac/Desktop/QICIFutures/QICIFutures/Home/Model/QICINewsLogic.m"
-                  timestampString = "581234483.517022"
+                  timestampString = "581237094.1982501"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"

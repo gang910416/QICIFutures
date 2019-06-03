@@ -246,16 +246,20 @@ static NSString *const homeCellId = @"homeCellId";
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeDomestic;
             tmafVC.title = @"国内期货";
-               [self.navigationController pushViewController:tmafVC animated:YES];
-        }
+            tmafVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:tmafVC animated:YES];
+            }
             break;
             
         case 1:
         {
+            
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";
+            tmafVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tmafVC animated:YES];
+            
         }
             break;
         case 2:
