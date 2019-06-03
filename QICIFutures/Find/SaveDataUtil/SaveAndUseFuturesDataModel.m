@@ -18,10 +18,10 @@
         if ([TheMarktUserDefault objectForKey:AllMyLikeFutures]) {
             NSDictionary *dict = [TheMarktUserDefault objectForKey:AllMyLikeFutures];
             
-            NSDictionary *userDic = [self.class getNowLoginInfo];
+            NSString *userName = [self.class getNowLoginInfo];
             
-            if ([dict objectForKey:userDic[@"userName"]]) {
-                NSArray *userArr = [dict objectForKey:userDic[@"userName"]];
+            if ([dict objectForKey:userName]) {
+                NSArray *userArr = [dict objectForKey:userName];
                 BOOL isAdd = YES;
                 for (NSDictionary *dic in userArr) {
                     if ([dic.allKeys.firstObject isEqualToString:code.uppercaseString]) {
@@ -34,10 +34,10 @@
                     [temp addObject:dic];
                     NSArray *tempArr = [NSArray arrayWithArray:temp];
                     
-                    NSMutableDictionary *dic = [dict mutableCopy];
-                    [dic setObject:tempArr forKey:userDic[@"userName"]];
+                    NSMutableDictionary *dicbb = [dict mutableCopy];
+                    [dicbb setObject:tempArr forKey:userName];
                     
-                    NSDictionary *tempDict = [NSDictionary dictionaryWithDictionary:dic];
+                    NSDictionary *tempDict = [NSDictionary dictionaryWithDictionary:dicbb];
                     
                     [TheMarktUserDefault setObject:tempDict forKey:AllMyLikeFutures];
                     
@@ -46,18 +46,18 @@
             }else{
                 
                 NSMutableDictionary *di = [dict mutableCopy];
-                [di setObject:@[dic] forKey:userDic[@"userName"]];
+                [di setObject:@[dic] forKey:userName];
                 NSDictionary *dicaa = [NSDictionary dictionaryWithDictionary:di];
                 
                 [TheMarktUserDefault setObject:dicaa forKey:AllMyLikeFutures];
                 [TheMarktUserDefault synchronize];
             }
         }else{
-            NSDictionary *userDic = [self.class getNowLoginInfo];
+            NSString *userName = [self.class getNowLoginInfo];
             
-            NSDictionary *dic = @{userDic[@"userName"]:@[@{code:name}]};
+            NSDictionary *dicss = @{userName:@[@{code:name}]};
             
-            [TheMarktUserDefault setObject:dic forKey:AllMyLikeFutures];
+            [TheMarktUserDefault setObject:dicss forKey:AllMyLikeFutures];
             [TheMarktUserDefault synchronize];
             
         }
@@ -71,10 +71,10 @@
         if ([TheMarktUserDefault objectForKey:AllMyLikeFutures]) {
             NSDictionary *dict = [TheMarktUserDefault objectForKey:AllMyLikeFutures];
             
-            NSDictionary *userDic = [self.class getNowLoginInfo];
+            NSString *userName = [self.class getNowLoginInfo];
             
-            if ([dict objectForKey:userDic[@"userName"]]) {
-                NSArray *userArr = [dict objectForKey:userDic[@"userName"]];
+            if ([dict objectForKey:userName]) {
+                NSArray *userArr = [dict objectForKey:userName];
                 
                 NSMutableArray *temp = [userArr mutableCopy];
                 
@@ -86,29 +86,13 @@
                 }
                 NSArray *tempArr = [NSArray arrayWithArray:temp];
                 NSMutableDictionary *dictt = [dict mutableCopy];
-                [dictt setObject:tempArr forKey:userDic[@"userName"]];
+                [dictt setObject:tempArr forKey:userName];
                 
                 NSDictionary *dicaa = [NSDictionary dictionaryWithDictionary:dictt];
                 
                 [TheMarktUserDefault setObject:dicaa forKey:AllMyLikeFutures];
                 [TheMarktUserDefault synchronize];
-            }else{
-                
-                NSMutableDictionary *di = [dict mutableCopy];
-                [di setObject:@[code] forKey:userDic[@"userName"]];
-                
-                NSDictionary *dicaa = [NSDictionary dictionaryWithDictionary:di];
-                [TheMarktUserDefault setObject:dicaa forKey:AllMyLikeFutures];
-                [TheMarktUserDefault synchronize];
             }
-        }else{
-            
-            NSDictionary *userDic = [self.class getNowLoginInfo];
-            
-            NSDictionary *dic = @{userDic[@"userName"]:@[code]};
-            
-            [TheMarktUserDefault setObject:dic forKey:AllMyLikeFutures];
-            [TheMarktUserDefault synchronize];
         }
     }
 }
@@ -120,10 +104,10 @@
         if ([TheMarktUserDefault objectForKey:AllMyLikeFutures]) {
             NSDictionary *dict = [TheMarktUserDefault objectForKey:AllMyLikeFutures];
             
-            NSDictionary *userDic = [self.class getNowLoginInfo];
+            NSString *userName = [self.class getNowLoginInfo];
             
-            if ([dict objectForKey:userDic[@"userName"]]) {
-                NSArray *userArr = [dict objectForKey:userDic[@"userName"]];
+            if ([dict objectForKey:userName]) {
+                NSArray *userArr = [dict objectForKey:userName];
                 
                 BOOL isLike = NO;
                 for (NSDictionary *dic in userArr) {
@@ -153,11 +137,11 @@
         if ([TheMarktUserDefault objectForKey:AllMyLikeFutures]) {
             NSDictionary *dict = [TheMarktUserDefault objectForKey:AllMyLikeFutures];
             
-            NSDictionary *userDic = [self.class getNowLoginInfo];
+            NSString *userName = [self.class getNowLoginInfo];
             
-            if ([dict objectForKey:userDic[@"userName"]]) {
+            if ([dict objectForKey:userName]) {
                 
-                NSArray *userArr = [dict objectForKey:userDic[@"userName"]];
+                NSArray *userArr = [dict objectForKey:userName];
                 return userArr;
                 
             }else{
@@ -327,20 +311,20 @@
 
 +(BOOL)isLogin{
     
-    if ([TheMarktUserDefault objectForKey:WhoIsLoginNow]) {
-        return YES;
+    if ([TheMarktUserDefault objectForKey:@"save_userinfor"]) {
+        return [[TheMarktUserDefault objectForKey:@"save_userinfor"] boolValue];
     }else{
         return NO;
     }
 }
 
-+(NSDictionary *)getNowLoginInfo{
++(NSString *)getNowLoginInfo{
     
-    if ([TheMarktUserDefault objectForKey:WhoIsLoginNow]) {
-        return [TheMarktUserDefault objectForKey:WhoIsLoginNow];
+    if ([TheMarktUserDefault objectForKey:@"loginnumber"]) {
+        return [TheMarktUserDefault objectForKey:@"loginnumber"];
     }
     
-    return @{};
+    return @"";
 }
 
 @end
