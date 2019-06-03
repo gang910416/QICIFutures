@@ -12,7 +12,7 @@
 #import "QCNewsListViewController.h"
 #import "QCNewsListModel.h"
 #import "QCNewsViewController.h"
-#import "ASDNewsListCell.h"
+#import "QCNewsListCell.h"
 #import "QCSearchListViewController.h"
 #import "QCMarketLogic.h"
 @interface QICHomeViewController ()<
@@ -173,7 +173,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ASDNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
+    QCNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
     QCNewsListModel *model = [self.newsDataSource objectAtIndex:indexPath.row];
     [cell updateDataWithModel:model];
     return cell;
@@ -249,7 +249,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.tableHeaderView = self.headerView;
         _tableView.mj_header = self.listRefreshHeader;
-        [_tableView registerClass:[ASDNewsListCell class] forCellReuseIdentifier:ASDNewsListViewCell_id_1];
+        [_tableView registerClass:[QCNewsListCell class] forCellReuseIdentifier:ASDNewsListViewCell_id_1];
     }
     return _tableView;
 }
@@ -329,6 +329,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
             tmafVC.type = TheMarktAllFuturesViewTypeForegin;
             tmafVC.title = @"国际期货";
+            tmafVC.navigationController.navigationBar.hidden = YES;
             tmafVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:tmafVC animated:YES];
             
@@ -336,10 +337,17 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             break;
         case 2:
         {
-            QICIIndexListViewController *indexVC = [[QICIIndexListViewController alloc] init];
-            indexVC.hidesBottomBarWhenPushed = YES;
-            indexVC.title = @"股指期货";
-            [self.navigationController pushViewController:indexVC animated:YES];
+//            QICIIndexListViewController *indexVC = [[QICIIndexListViewController alloc] init];
+//            indexVC.hidesBottomBarWhenPushed = YES;
+//            indexVC.title = @"股指期货";
+//            [self.navigationController pushViewController:indexVC animated:YES];
+            TheMarktAllFuturesViewController *tmafVC = [[TheMarktAllFuturesViewController alloc] init];
+            
+            tmafVC.type = TheMarktAllFuturesViewTypeForegin;
+            tmafVC.title = @"股指期货";
+            tmafVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:tmafVC animated:YES];
+            
             
         }
             break;

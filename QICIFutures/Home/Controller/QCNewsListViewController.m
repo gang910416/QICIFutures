@@ -9,7 +9,7 @@
 #import "QCNewsListViewController.h"
 #import "QCNewsViewController.h"
 #import "QCHomeDataMannger.h"
-#import "ASDNewsListCell.h"
+#import "QCNewsListCell.h"
 #import "QCNewsListModel.h"
 #import "GLRefreshFooter.h"
 @interface QCNewsListViewController ()<UITableViewDelegate , UITableViewDataSource>
@@ -212,7 +212,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ASDNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
+    QCNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDNewsListViewCell_id_1 forIndexPath:indexPath];
     QCNewsListModel *model = [self.dataSource objectAtIndex:indexPath.row];
     [cell updateDataWithModel:model];
     return cell;
@@ -270,7 +270,7 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
         _listView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _listView.delegate = self;
         _listView.dataSource = self;
-        [_listView registerClass:[ASDNewsListCell class] forCellReuseIdentifier:ASDNewsListViewCell_id_1];
+        [_listView registerClass:[QCNewsListCell class] forCellReuseIdentifier:ASDNewsListViewCell_id_1];
         _listView.mj_header = [GLRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(p_loadNewData)];
         _listView.mj_footer = [GLRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(p_loadDataFromNet)];
     }

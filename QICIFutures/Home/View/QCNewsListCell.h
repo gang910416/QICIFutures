@@ -10,7 +10,7 @@
 @class QCNewsListModel;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ASDNewsListCell : UITableViewCell
+@interface QCNewsListCell : UITableViewCell
 
 - (void)updateDataWithModel:(QCNewsListModel *)model;
 

@@ -6,10 +6,10 @@
 //  Copyright © 2019 ASD. All rights reserved.
 //
 
-#import "ASDNewsListCell.h"
+#import "QCNewsListCell.h"
 #import "QCNewsListModel.h"
 
-@interface ASDNewsListCell ()
+@interface QCNewsListCell ()
 
 /** model */
 @property (strong, nonatomic) QCNewsListModel *newsModel;
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation ASDNewsListCell
+@implementation QCNewsListCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {

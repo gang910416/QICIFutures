@@ -31,7 +31,7 @@
 		044017CF22A4B9B5003F2E3C /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044017CD22A4B9B5003F2E3C /* CollectionViewController.m */; };
 		044017D022A4B9B5003F2E3C /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044017CE22A4B9B5003F2E3C /* CollectionViewController.xib */; };
 		0451547B22A520B7006BDB0B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		0451547C22A520C5006BDB0B /* ASDNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */; };
+		0451547C22A520C5006BDB0B /* QCNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BF422A4FBB300412FFD /* QCNewsListCell.m */; };
 		0451547D22A520D2006BDB0B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		0451547E22A520EF006BDB0B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		0451547F22A52104006BDB0B /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -113,7 +113,7 @@
 		04CA6BE122A4D1E400412FFD /* QICIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BE022A4D1E400412FFD /* QICIRequestSerializer.m */; };
 		04CA6BFF22A509B100412FFD /* OrderBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6BFD22A509B100412FFD /* OrderBookModel.m */; };
 		04CA6C0222A50ABF00412FFD /* QCMarketListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0122A50ABF00412FFD /* QCMarketListSectionHeaderView.m */; };
-		04CA6C0522A50AE900412FFD /* ASDMarketListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0322A50AE900412FFD /* ASDMarketListCell.m */; };
+		04CA6C0522A50AE900412FFD /* QCMarketListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0322A50AE900412FFD /* QCMarketListCell.m */; };
 		04CA6C0C22A50E3000412FFD /* QCSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0B22A50E3000412FFD /* QCSearchListViewController.m */; };
 		04CA6C0E22A50EE000412FFD /* QCNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0D22A50EE000412FFD /* QCNewsListViewController.m */; };
 		04CA6C1022A50F1F00412FFD /* QCMarketLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA6C0F22A50F1E00412FFD /* QCMarketLogic.m */; };
@@ -358,16 +358,16 @@
 		04CA6BE222A4D1F900412FFD /* QICIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QICIResponseSerializer.h; sourceTree = "<group>"; };
 		04CA6BE322A4D1FA00412FFD /* QICIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QICIResponseSerializer.m; sourceTree = "<group>"; };
 		04CA6BE522A4FB0A00412FFD /* QCNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCNewsListViewController.h; sourceTree = "<group>"; };
-		04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDNewsListCell.m; sourceTree = "<group>"; };
-		04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDNewsListCell.h; sourceTree = "<group>"; };
+		04CA6BF422A4FBB300412FFD /* QCNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCNewsListCell.m; sourceTree = "<group>"; };
+		04CA6BF522A4FBB300412FFD /* QCNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCNewsListCell.h; sourceTree = "<group>"; };
 		04CA6BF722A508C600412FFD /* QCMarketLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMarketLogic.h; sourceTree = "<group>"; };
 		04CA6BFB22A5090D00412FFD /* QCSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSearchListViewController.h; sourceTree = "<group>"; };
 		04CA6BFD22A509B100412FFD /* OrderBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderBookModel.m; sourceTree = "<group>"; };
 		04CA6BFE22A509B100412FFD /* OrderBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderBookModel.h; sourceTree = "<group>"; };
 		04CA6C0022A50ABF00412FFD /* QCMarketListSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMarketListSectionHeaderView.h; sourceTree = "<group>"; };
 		04CA6C0122A50ABF00412FFD /* QCMarketListSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMarketListSectionHeaderView.m; sourceTree = "<group>"; };
-		04CA6C0322A50AE900412FFD /* ASDMarketListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDMarketListCell.m; sourceTree = "<group>"; };
-		04CA6C0422A50AE900412FFD /* ASDMarketListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDMarketListCell.h; sourceTree = "<group>"; };
+		04CA6C0322A50AE900412FFD /* QCMarketListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMarketListCell.m; sourceTree = "<group>"; };
+		04CA6C0422A50AE900412FFD /* QCMarketListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMarketListCell.h; sourceTree = "<group>"; };
 		04CA6C0B22A50E3000412FFD /* QCSearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCSearchListViewController.m; sourceTree = "<group>"; };
 		04CA6C0D22A50EE000412FFD /* QCNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCNewsListViewController.m; sourceTree = "<group>"; };
 		04CA6C0F22A50F1E00412FFD /* QCMarketLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMarketLogic.m; sourceTree = "<group>"; };
@@ -583,10 +583,10 @@
 		0479B29E22A11D01003BBE34 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04CA6C0422A50AE900412FFD /* ASDMarketListCell.h */,
-				04CA6C0322A50AE900412FFD /* ASDMarketListCell.m */,
-				04CA6BF522A4FBB300412FFD /* ASDNewsListCell.h */,
-				04CA6BF422A4FBB300412FFD /* ASDNewsListCell.m */,
+				04CA6C0422A50AE900412FFD /* QCMarketListCell.h */,
+				04CA6C0322A50AE900412FFD /* QCMarketListCell.m */,
+				04CA6BF522A4FBB300412FFD /* QCNewsListCell.h */,
+				04CA6BF422A4FBB300412FFD /* QCNewsListCell.m */,
 				0479B3B822A48B51003BBE34 /* QICIMarketDetailView.h */,
 				0479B3B722A48B51003BBE34 /* QICIMarketDetailView.m */,
 				0479B2F622A3CDB4003BBE34 /* QICIMarketListSectionHeaderView.h */,
@@ -1167,7 +1167,7 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1306,7 +1306,7 @@
 				0451547F22A52104006BDB0B /* (null) in Sources */,
 				0451547E22A520EF006BDB0B /* (null) in Sources */,
 				0451547D22A520D2006BDB0B /* (null) in Sources */,
-				0451547C22A520C5006BDB0B /* ASDNewsListCell.m in Sources */,
+				0451547C22A520C5006BDB0B /* QCNewsListCell.m in Sources */,
 				0451547B22A520B7006BDB0B /* (null) in Sources */,
 				04B5398322A4F60D00578EE4 /* QICIRequestSerializer.m in Sources */,
 				04B5398222A4F5FD00578EE4 /* QICIResponseSerializer.m in Sources */,
@@ -1394,7 +1394,7 @@
 				D722265D21A2578F00278111 /* UIBarButtonItem+ImageTitleItem.m in Sources */,
 				0479B2F822A3CDB5003BBE34 /* QICIMarketListSectionHeaderView.m in Sources */,
 				0479B2C222A1F49C003BBE34 /* QCHomeDataMannger.m in Sources */,
-				04CA6C0522A50AE900412FFD /* ASDMarketListCell.m in Sources */,
+				04CA6C0522A50AE900412FFD /* QCMarketListCell.m in Sources */,
 				D722267621A29A8600278111 /* UIMainConstructor.m in Sources */,
 				04CA6C1022A50F1F00412FFD /* QCMarketLogic.m in Sources */,
 				04A5410F22A2CCF1001C0DE5 /* AllFuturesTopBtnView.m in Sources */,
@@ -1591,10 +1591,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = ENGLISH.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B629F7RW44;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveOfBeiJing/Other",
@@ -1606,9 +1605,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.menggudian.english;
+				PRODUCT_BUNDLE_IDENTIFIER = net.zongbang.qhb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dev_qhb;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
 			};
@@ -1620,10 +1619,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = ENGLISH.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B629F7RW44;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LiveOfBeiJing/Other",
@@ -1635,9 +1633,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.menggudian.english;
+				PRODUCT_BUNDLE_IDENTIFIER = net.zongbang.qhb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dis_qhb;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
 			};

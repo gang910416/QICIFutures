@@ -8,7 +8,7 @@
 
 #import "QCSearchListViewController.h"
 #import "QCMarketListSectionHeaderView.h"
-#import "ASDMarketListCell.h"
+#import "QCMarketListCell.h"
 
 @interface QCSearchListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -83,7 +83,7 @@ static NSString *const ASDSearchListViewCell_id_1 = @"ASDSearchListViewCell_id_1
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ASDMarketListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDSearchListViewCell_id_1 forIndexPath:indexPath];
+    QCMarketListCell *cell = [tableView dequeueReusableCellWithIdentifier:ASDSearchListViewCell_id_1 forIndexPath:indexPath];
     ASDMarketListModel *model = [self.dataSource objectAtIndex:indexPath.row];
     [cell updateWithDataModel:model indexPath:indexPath];
     return cell;
@@ -149,7 +149,7 @@ static NSString *const ASDSearchListViewCell_id_1 = @"ASDSearchListViewCell_id_1
         _listView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _listView.delegate = self;
         _listView.dataSource = self;
-        [_listView registerClass:[ASDMarketListCell class] forCellReuseIdentifier:ASDSearchListViewCell_id_1];
+        [_listView registerClass:[QCMarketListCell class] forCellReuseIdentifier:ASDSearchListViewCell_id_1];
     }
     return _listView;
 }

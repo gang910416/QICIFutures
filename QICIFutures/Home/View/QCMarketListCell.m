@@ -1,8 +1,8 @@
 
 
-#import "ASDMarketListCell.h"
+#import "QCMarketListCell.h"
 
-@interface ASDMarketListCell ()
+@interface QCMarketListCell ()
 
 @property (strong, nonatomic) UILabel *titleLabel;
 
@@ -19,7 +19,7 @@
 @property (strong, nonatomic) NSIndexPath *indexPath;
 
 @end
-@implementation ASDMarketListCell
+@implementation QCMarketListCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
