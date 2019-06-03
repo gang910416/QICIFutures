@@ -30,12 +30,10 @@ target 'QICIFutures' do
    pod 'QWAlertView'
   pod 'IQKeyboardManager'
 
-pod 'DZNEmptyDataSet'
-
-
   pod 'DZNEmptyDataSet'
   pod 'MJExtension'
   pod 'QCLineView'
+
 
   
 end

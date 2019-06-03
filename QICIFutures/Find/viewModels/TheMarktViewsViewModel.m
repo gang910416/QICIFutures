@@ -128,7 +128,9 @@
     if (!cell) {
         cell = [[TheMarktLearnsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TheMarktLearnsTableViewCell"];
     }
+
     weakSelf(self);
+
     cell.jumpToLearnView = ^{
         if (weakSelf.jumpToLearnView) {
             weakSelf.jumpToLearnView();
@@ -146,7 +148,9 @@
         cell = [[TheMarktOthersTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TheMarktOthersTableViewCell"];
     }
     
+
     weakSelf(self);
+
     cell.othersBtnClickBlock = ^(NSInteger index) {
         if (weakSelf.othersBlock) {
             weakSelf.othersBlock(index);

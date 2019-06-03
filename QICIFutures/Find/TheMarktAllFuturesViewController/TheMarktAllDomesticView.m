@@ -75,7 +75,9 @@
     if (!_btnView) {
         _btnView = [[AllFuturesTopBtnView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50) andBtns:@[@"国内全部",@"菜油期货"]];
         [_btnView selectIndex:0];
+
         weakSelf(self);
+
         _btnView.btnClickBlock = ^(NSInteger index) {
             switch (index) {
                 case 0:

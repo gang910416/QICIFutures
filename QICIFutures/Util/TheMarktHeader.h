@@ -23,7 +23,11 @@
 
 #define tokenKey @"3f39051e89e1cea0a84da126601763d8"
 
+
 //#define cxr_weakSelf(self) __weak __typeof(&*self) weakSelf = self
+
+//#define weakSelf(weakSelf) __weak __typeof(&*self) weakSelf = self
+
 
 #define TheMarktUserDefault [NSUserDefaults standardUserDefaults]
 

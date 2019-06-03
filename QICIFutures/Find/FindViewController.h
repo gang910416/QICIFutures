@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FindViewController : TheMarktBaseViewController
 
 
-
-
 @end
 
 NS_ASSUME_NONNULL_END
