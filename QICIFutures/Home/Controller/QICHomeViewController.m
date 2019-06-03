@@ -277,7 +277,12 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
             }else if (Tag == 11 ){
                 [weakSelf pushToWebView:@"https://activity.gkoudai.com/s/2018/tradingRules/index.html" titleString:@"交易规则"];
             }else{
-                
+                // 协议条款
+                LocalViewController *loacal = [[LocalViewController alloc]init];
+                loacal.hidesBottomBarWhenPushed = YES;
+                loacal.localStr = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+                loacal.titleStr = @"关于我们";
+                [self.navigationController pushViewController:loacal animated:YES];
             }
         };
     }
@@ -339,14 +344,14 @@ static NSString *const ASDNewsListViewCell_id_1 = @"ASDNewsListViewCell_id_1";
         }
             break;
         case 3:
-        {
-            QCNewsListViewController *newsListVC = [[QCNewsListViewController alloc] initWithNeedBackBtn:YES];
-            newsListVC.hidesBottomBarWhenPushed = YES;
-            newsListVC.title = @"资讯";
-            [self.navigationController pushViewController:newsListVC animated:YES];
-        }
-            break;
-        case 4:
+//        {
+//            QCNewsListViewController *newsListVC = [[QCNewsListViewController alloc] initWithNeedBackBtn:YES];
+//            newsListVC.hidesBottomBarWhenPushed = YES;
+//            newsListVC.title = @"资讯";
+//            [self.navigationController pushViewController:newsListVC animated:YES];
+//        }
+//            break;
+//        case 4:
         {
             QICIBaseWebViewController *fastNewsVC = [[QICIBaseWebViewController alloc] initWithUrl:@"https://m.fxinz.com/zh/news.html?app=gts2_app_orig&consulting=1&deviceId=&version=100&terminal=ios"];
             fastNewsVC.hidesBottomBarWhenPushed = YES;

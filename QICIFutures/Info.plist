@@ -2,16 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>“大辉期货”使用您的地理位置以提供更精准的服务</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>“大辉期货”使用您的地理位置以提供更精准的服务</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>期货</string>
+	<string>贵金属期货宝</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -144,6 +138,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>访问相机以拍摄图片用来改变用户信息</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>“大辉期货”使用您的地理位置以提供更精准的服务</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>“大辉期货”使用您的地理位置以提供更精准的服务</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>访问相册以添加图片到您的相册</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -173,5 +171,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
