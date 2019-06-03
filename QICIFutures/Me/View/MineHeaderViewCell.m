@@ -87,7 +87,7 @@
             }];
             _tip.textColor = [UIColor textColorWithType:1];
             _tip.font = [UIFont systemFontOfSize:12];
-            _tip.text = @"欢迎来到数字期货通";
+            _tip.text = @"欢迎来到迎客手机维修宝";
             _tip.textAlignment = NSTextAlignmentCenter;
         }
     }

@@ -38,7 +38,7 @@
     [self.view addSubview:bgView];
     
     self.presentBtn = [[UIButton alloc]initWithFrame:CGRectMake(20, self.view.frame.size.height-400,self.view.frame.size.width-40,50)];
-    self.presentBtn.backgroundColor = RGBColor(235, 85, 75);
+    self.presentBtn.backgroundColor = QICIColorTheme;
     [self.presentBtn setTitle:@"提交" forState:UIControlStateNormal];
     self.presentBtn.titleLabel.font = [UIFont boldSystemFontOfSize:18];
     [self.presentBtn addTarget:self action:@selector(ClickPresentBtn:) forControlEvents:UIControlEventTouchUpInside];

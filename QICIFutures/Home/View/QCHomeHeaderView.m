@@ -302,7 +302,9 @@
 }
 - (QCBtnSView *)mapView {
     if (!_mapView) {
+
         _mapView = [[QCBtnSView alloc] initWithFrame:CGRectMake(0, 10, kDeviceWidth, SCALE_Length(80.0f)) titles:@[@"国内期货",@"国际期货",@"股指期货",@"快讯"] icons:@[@"icon_home_profit",@"icon_home_short",@"icon_home_suc",@"icon_home_simulate"]];
+
         _mapView.backgroundColor = QICIColorGap;
         _mapView.delegate = self;
     }

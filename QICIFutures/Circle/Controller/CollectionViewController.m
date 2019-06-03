@@ -13,6 +13,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self requestData];
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +24,13 @@
 
 - (void)requestData{
     self.likeArray = [[[NSUserDefaults standardUserDefaults]objectForKey:@"newsid"] mutableCopy];
+    if (self.likeArray.count == 0) {
+        [self.collectionTbv registerNib:[UINib nibWithNibName:@"NoDataTableViewCell" bundle:nil] forCellReuseIdentifier:@"NoDataTableViewCell"];
+        self.collectionTbv.rowHeight = SCREEN_HEIGHT-kDeviceNavHeight;
+    }else{
+        self.collectionTbv.rowHeight = 100;
+        [self.collectionTbv registerNib:[UINib nibWithNibName:@"CollectionTableViewCell" bundle:nil] forCellReuseIdentifier:@"CollectionTableViewCell"];
+    }
     [self.collectionTbv reloadData];
 }
 
@@ -31,17 +39,15 @@
     self.collectionTbv.delegate = self;
     self.collectionTbv.dataSource = self;
     [self.view addSubview:self.collectionTbv];
-    if (self.likeArray.count == 0) {
-        [self.collectionTbv registerNib:[UINib nibWithNibName:@"NoDataTableViewCell" bundle:nil] forCellReuseIdentifier:@"NoDataTableViewCell"];
-        self.collectionTbv.rowHeight = SCREEN_HEIGHT-kDeviceNavHeight;
-    }else{
-        self.collectionTbv.rowHeight = 100;
-        [self.collectionTbv registerNib:[UINib nibWithNibName:@"CollectionTableViewCell" bundle:nil] forCellReuseIdentifier:@"CollectionTableViewCell"];
-    }
+   
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.likeArray.count;
+    if (self.likeArray.count == 0) {
+        return 1;
+    }else{
+        return self.likeArray.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -86,13 +92,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 1) {
+    if (self.likeArray.count !=0) {
         NewsDetailViewController *detail = [[NewsDetailViewController alloc]init];
         detail.hidesBottomBarWhenPushed = YES;
         detail.newsid = [self.likeArray[indexPath.row] objectForKey:@"newsId"];
         detail.dataArr = self.likeArray[indexPath.row];
         [self.navigationController pushViewController:detail animated:YES];
     }
+    
 }
 
 
