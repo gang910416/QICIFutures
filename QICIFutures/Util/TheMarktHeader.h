@@ -19,7 +19,7 @@
 #import "TheMarktBaseViewController.h"
 #import "TheMarktBseNavigationViewController.h"
 
-#define MarktGlobalColor RGBColor(156, 210, 254)
+#define MarktGlobalColor QICIColorTheme
 
 #define tokenKey @"3f39051e89e1cea0a84da126601763d8"
 

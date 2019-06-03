@@ -109,8 +109,8 @@
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-//    [btn setImage:imageWithString(@"bottom_collect_sel") forState:UIControlStateSelected];
-//    [btn setImage:imageWithString(@"bottom_collect_nor") forState:UIControlStateNormal];
+    [btn setImage:imageWithName(@"bottom_collect_sel") forState:UIControlStateSelected];
+    [btn setImage:imageWithName(@"bottom_collect_nor") forState:UIControlStateNormal];
     btn.selected = [SaveAndUseFuturesDataModel isLikeFutures:self.infoKey.uppercaseString];
     
     [btn addTarget:self action:@selector(rightBtnClick:) forControlEvents:UIControlEventTouchUpInside];
