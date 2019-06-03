@@ -41,8 +41,8 @@
 - (void)p_asd_configUI {
 
     [self addSubview:self.symbolLabel];
-    [self addSubview:self.priceLabel];
-    [self addSubview:self.chgLabel];
+//    [self addSubview:self.priceLabel];
+//    [self addSubview:self.chgLabel];
 
     [self layoutWithMasonry];
 }
@@ -50,7 +50,7 @@
 - (void)layoutWithMasonry {
     
     self.backgroundColor = QICIColorGap;
-    self.symbolLabel.text = @"期货";
+    self.symbolLabel.text = @"最热";
     self.priceLabel.text = @"最新价格";
     self.chgLabel.text = @"涨跌幅";
     [self.symbolLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,16 +59,16 @@
         make.centerY.mas_equalTo(self.mas_centerY);
         make.width.mas_equalTo(SCALE_Length(160.0f));
     }];
-
-    [self.priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_left).mas_offset(SCALE_Length(180.0f));
-        make.centerY.equalTo(self.mas_centerY);
-    }];
-
-    [self.chgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.mas_right).offset(SCALE_Length(- 10.0f));
-        make.centerY.equalTo(self.mas_centerY);
-    }];
+//
+//    [self.priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.mas_left).mas_offset(SCALE_Length(180.0f));
+//        make.centerY.equalTo(self.mas_centerY);
+//    }];
+//
+//    [self.chgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(self.mas_right).offset(SCALE_Length(- 10.0f));
+//        make.centerY.equalTo(self.mas_centerY);
+//    }];
 
 }
 
@@ -76,8 +76,8 @@
 
     if(self.titles && self.titles.count >= 3) {
 
-        self.symbolLabel.text = [self.titles objectAtIndex:0];
-        self.priceLabel.text = [self.titles objectAtIndex:1];
+//        self.symbolLabel.text = [self.titles objectAtIndex:0];
+//        self.priceLabel.text = [self.titles objectAtIndex:1];
         self.chgLabel.text = [self.titles objectAtIndex:2];
 
     }
@@ -95,7 +95,7 @@
 - (UILabel *)symbolLabel {
     if (!_symbolLabel) {
         _symbolLabel = [[UILabel alloc] init];
-        _symbolLabel.font = [UIFont fontWithName:fFont size:12.0f];
+        _symbolLabel.font = [UIFont fontWithName:fFont size:16.0f];
         _symbolLabel.textColor = QICIColorNormalText;
     }
     return _symbolLabel;

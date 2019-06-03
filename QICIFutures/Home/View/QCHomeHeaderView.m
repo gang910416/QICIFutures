@@ -97,7 +97,7 @@
     [self.mapLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
-        make.top.equalTo(self.mapView.mas_bottom);
+        make.top.equalTo(self.mapView.mas_bottom).offset(SCALE_Length(-60));
         make.height.mas_equalTo(SCALE_Length(0.0f));
     }];
     [self addSubview:self.infoMationView];
@@ -302,7 +302,7 @@
 }
 - (QCBtnSView *)mapView {
     if (!_mapView) {
-        _mapView = [[QCBtnSView alloc] initWithFrame:CGRectMake(0, 10, kDeviceWidth, SCALE_Length(120.0f)) titles:@[@"国内期货",@"国际期货",@"股指期货",@"资讯",@"快讯"] icons:@[@"icon_home_profit",@"icon_home_short",@"icon_home_suc",@"icon_home_news",@"icon_home_simulate"]];
+        _mapView = [[QCBtnSView alloc] initWithFrame:CGRectMake(0, 10, kDeviceWidth, SCALE_Length(80.0f)) titles:@[@"国内期货",@"国际期货",@"股指期货",@"快讯"] icons:@[@"icon_home_profit",@"icon_home_short",@"icon_home_suc",@"icon_home_simulate"]];
         _mapView.backgroundColor = QICIColorGap;
         _mapView.delegate = self;
     }
